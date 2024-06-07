@@ -1,7 +1,9 @@
-2024-05-16 05:17
-
-Link: https://doc.rust-lang.org/book/ch15-01-box.html
-
+---
+date: 2024-05-16 05:17
+tags:
+  - final
+source: " https://doc.rust-lang.org/book/ch15-01-box.html"
+---
 # Rust Book - Box
 - The difference between references and smart-pointers is while references borrow data, smart-pointers own the data they point to.
 

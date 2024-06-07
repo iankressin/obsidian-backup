@@ -1,7 +1,9 @@
-2024-05-28 13:13
-
-Link: https://doc.rust-lang.org/book/ch15-02-deref.html
-
+---
+date: 2024-05-28 13:13
+tags:
+  - final
+source: https://doc.rust-lang.org/book/ch15-02-deref.html
+---
 # Rust book - Deref trait
 
 - We can use the dereference operator (\*\) on Boxes just like a regular reference because Box implements the deref trait

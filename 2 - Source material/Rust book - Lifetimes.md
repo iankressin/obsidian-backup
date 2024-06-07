@@ -1,9 +1,9 @@
-2024-05-09 07:26
-
-Status: #final 
-
-Tags: [[Rust]]
-
+---
+date: 2024-05-09 07:26
+tags:
+  - final
+source: https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
+---
 # Lifetimes
 Lifetimes is a special type of generic in rust. Unlike the regular type generics, which expresses that a given value is open to assume any type provided by the caller, lifetime generics are about the lifespan of a value inside a given scope.
 

@@ -1,7 +1,9 @@
-2024-05-10 08:03
-
-Link: https://www.youtube.com/watch?v=N5p0TB77flM&t=1814s
-
+---
+date: 2024-05-10 08:03
+tags:
+  - "#inprogess"
+source: https://www.youtube.com/watch?v=N5p0TB77flM&t=1814s
+---
 # Bankless 119 - Sharding
 
 - The Ethereum roadmap which originally proposed L1 sharding, now proposes a rollup-centric roadmap. Where thr L2 converts is non-scalable data into blobs and post it to the L1

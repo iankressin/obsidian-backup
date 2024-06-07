@@ -1,7 +1,9 @@
-2024-06-05 11:00
-
-Link: https://doc.rust-lang.org/stable/book/ch15-03-drop.html
-
+---
+date: 2024-06-05 11:00
+tags:
+  - "#inprogess"
+source: https://doc.rust-lang.org/stable/book/ch15-03-drop.html
+---
 # Rust book - Drop trait
 
 -  Drop trait allows to run arbitrary code when value goes out of scope

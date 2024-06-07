@@ -1,8 +1,8 @@
-{{date}} {{time}}
-
-Status: 
-
-Tags:
+---
+date: "{{date}} {{time}}"
+tags: 
+description:
+---
 
 # {{Title}}
 

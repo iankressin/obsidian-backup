@@ -1,6 +1,9 @@
-2024-05-28 14:43
-
-Link: https://www.youtube.com/watch?v=DEE1GKMbtgw
+---
+date: 2024-05-28 14:43
+tags:
+  - final
+source: https://www.youtube.com/watch?v=DEE1GKMbtgw
+---
 
 # Boxes, Heaps, and Stacks - Tim McNamara
 

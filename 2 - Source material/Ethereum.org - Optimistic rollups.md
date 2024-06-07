@@ -1,7 +1,9 @@
-2024-06-03 10:11
-
-Link: https://ethereum.org/en/developers/docs/scaling/optimistic-rollups/
-
+---
+date: 2024-06-03 10:11
+tags:
+  - final
+source: https://ethereum.org/en/developers/docs/scaling/optimistic-rollups/
+---
 # Ethereum.org - Optimistic rollups
 
 - Optimistic rollups executes transactions off-chain, and post their outcome to the layer 1

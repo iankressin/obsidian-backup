@@ -1,7 +1,9 @@
-2024-04-26 16:15
-
-Link: https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum
-
+---
+date: 2024-04-26 16:15
+tags:
+  - "#inprogess"
+source: https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum
+---
 # The Hitchhiker's Guide to Ethereum - Danksharding
 
 - Danksharding aims to improve rollups validation and data availability, ending in rollups scalability.

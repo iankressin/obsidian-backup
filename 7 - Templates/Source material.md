@@ -1,6 +1,10 @@
-{{date}} {{time}}
+---
+date: "{{date}} {{time}}"
+tags:
+  - "#inprogess"
+source:
+---
 
-Source:
 
 # {{Title}}
 

@@ -1,7 +1,9 @@
-2024-06-05 11:53
-
-Source: https://doc.rust-lang.org/stable/book/ch15-04-rc.html
-
+---
+date: 2024-06-05 11:53
+tags:
+  - "#inprogess"
+source: https://doc.rust-lang.org/stable/book/ch15-04-rc.html
+---
 # Rust book - Rc
 
 - A reference counting pointer allows multiple owners of a single heap-allocated data.

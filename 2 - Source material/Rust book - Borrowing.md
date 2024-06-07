@@ -1,9 +1,10 @@
-2024-04-26 09:36
-
-Status: #final
-
-Tags: [[6 - Tags/Rust|Rust]]
-
+---
+date: 2024-04-26 09:36
+tags:
+  - Rust
+  - final
+description: Rust's borrowing system
+---
 # Borrowing
 Binding a heap allocated variable to another one is not the only behavior that causes a ownership to change hands in Rust. When a variable is passed the Rust compiler also consider that a move, as the example below shows:
 ```rust
@@ -60,13 +61,7 @@ fn main() {
 	println!("{s1}"); // s1 exists here
 }
 ```
-
-The diagram below represents a mental model of how `&s` is represented in memory:
-
-![[trpl04-05.svg]]
-
-As variables, references are unmutable by default, which mean that if a function tries to modify the original value of a variable that is behind a reference, the compiler throws an error, like represented below:
-
+As variables, references are immutable by default, which mean that if a function tries to modify the original value of a variable that is behind a reference, the compiler throws an error, like represented below:
 ```rust
 fn change(s: &String) -> usize {
 	s.push_str("world"); // ERROR: Cannot borrow s as mutable

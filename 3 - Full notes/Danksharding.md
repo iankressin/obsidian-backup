@@ -1,9 +1,10 @@
-2024-05-31 07:45
-
-Status: #final 
-
-Tags: [[Ethereum]]
-
+---
+date: 2024-05-31 07:45
+tags:
+  - Ethereum
+  - final
+description:
+---
 # Danksharding
 
 ### Intro
@@ -38,4 +39,3 @@ Also, protocols are required to support a lot of different chains in order to ca
 ![[Pasted image 20240531102819.png]]
 
 ## References
-1

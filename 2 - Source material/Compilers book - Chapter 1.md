@@ -1,7 +1,9 @@
-2024-05-26 01:55
-
-Link: Compilers book
-
+---
+date: 2024-05-26 01:55
+tags:
+  - final
+source: Compilers book
+---
 # Compilers book - Chapter 1
 
 ### Processadores de linguagens

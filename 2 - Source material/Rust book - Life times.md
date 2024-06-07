@@ -1,7 +1,9 @@
-2024-04-26 10:12
-
-Link: https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
-
+---
+date: 2024-04-26 10:12
+tags:
+  - "#inprogess"
+source: https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
+---
 # Rust book - Lifetimes
 
 - Lifetimes validates a reference exists for as long we need them to

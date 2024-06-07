@@ -1,9 +1,10 @@
-2024-04-26 09:42
-
-Status: #final 
-
-Tags: [[6 - Tags/Ethereum|Ethereum]]
-
+---
+date: 2024-04-26 09:42
+tags:
+  - final
+  - Ethereum
+description: The different components of Ethereum consensus layer
+---
 # Beacon Chain
 
 The Beacon chain was introduced during in the The Merge section of Ethereum proof-of-stake roadmap. It was introduced first as a chain of "empty" blocks, back in 2020, and now it serves as the consensus layer for Ethereum.

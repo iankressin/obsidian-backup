@@ -1,7 +1,9 @@
-2024-06-03 09:08
-
-Link: https://ethereum.org/en/developers/docs/scaling/#layer-2-scaling
-
+---
+date: 2024-06-03 09:08
+tags:
+  - final
+source: https://ethereum.org/en/developers/docs/scaling/#layer-2-scaling
+---
 # Ethereum.org - Layer 2 scaling
 
 - Scaling is part of an off-chain scaling solutions are Ethereum-compatible scaling solutions that aim to scale the transaction throughput without sacrificing decentralization (to a level).

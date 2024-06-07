@@ -1,7 +1,9 @@
-2024-04-30 06:54
-
-Link: https://www.youtube.com/watch?v=rAl-9HwD858
-
+---
+date: 2024-04-30 06:54
+tags:
+  - inprogess
+source: https://www.youtube.com/watch?v=rAl-9HwD858
+---
 # Crust of Rust - Lifetime annotations
 - we can always assign a lifetime that's equal or longer than another lifetime
 ```rust
