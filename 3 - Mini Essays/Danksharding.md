@@ -34,8 +34,6 @@ Since execution is pushed to the L2, the protocol encourages transactions to the
 
 Also, protocols are required to support a lot of different chains in order to capture this liquidity. This can lead to poor onbording for new crypto users.
 
-![[Pasted image 20240531102553.png]]
-![[Pasted image 20240531102533.png]]
 ![[Pasted image 20240531102819.png]]
 
 ## References

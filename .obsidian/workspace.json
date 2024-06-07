@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3 - Essays/Beacon Chain.md",
+                "file": "2 - Notes/Rust book - Ownership.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3 - Essays/Danksharding.md",
+                "file": "3 - Mini Essays/Danksharding.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3 - Essays/Beacon Chain.md",
+                "file": "2 - Notes/Rust book - Ownership.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3 - Essays/Beacon Chain.md",
+                "file": "2 - Notes/Rust book - Ownership.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3 - Essays/Beacon Chain.md"
+                "file": "2 - Notes/Rust book - Ownership.md"
               }
             }
           }
@@ -166,8 +166,20 @@
   },
   "active": "c6ac7bbd8ad78856",
   "lastOpenFiles": [
-    "3 - Essays/Danksharding.md",
-    "3 - Essays/Beacon Chain.md",
+    "2 - Notes/Rust book - Rc.md",
+    "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
+    "1 - Future notes/Rust - Closures.md",
+    "1 - Future notes/Rust - Interior mutability.md",
+    "1 - Future notes/Rust - Iterators.md",
+    "1 - Future notes/Rust - Stack frame.md",
+    "2 - Notes/Ethereum.org - Optimistic rollups.md",
+    "2 - Notes/Ethereum.org - Layer 2 scaling.md",
+    "2 - Notes/Crust of Rust - Lifetime annotations.md",
+    "2 - Notes/Compilers book - Chapter 1.md",
+    "2 - Notes/Boxes, Heaps, and Stacks - Tim McNamara.md",
+    "2 - Notes/Bankless 119 - Sharding.md",
+    "3 - Mini Essays/Danksharding.md",
+    "3 - Mini Essays/Beacon Chain.md",
     "2 - Notes/Rust book - Ownership.md",
     "3 - Full notes/Restaking.md",
     "3 - Full notes/Fragmentation.md",
@@ -177,22 +189,10 @@
     "2 - Notes/Rust book - Borrowing.md",
     "3 - Full notes/Smart-pointers.md",
     "2 - Notes/Rust book - Box.md",
-    "2 - Notes/Rust - Stack frame.md",
-    "2 - Notes/Rust - Interior mutability.md",
-    "2 - Notes/Rust - Iterators.md",
     "2 - Notes/Rust book - Drop trait.md",
     "7 - Templates/Full note.md",
     "7 - Templates/Source material.md",
-    "6 - Tags/Ethereum.md",
-    "6 - Tags/Compilers.md",
-    "6 - Tags/Blockchain.md",
-    "2 - Notes/Bankless 119 - Sharding.md",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
-    "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
-    "2 - Notes/Rust book - Rc.md",
-    "2 - Notes/Rust book - Life times.md",
-    "2 - Notes/Rust book - Deref trait.md",
-    "2 - Notes/Rust book - Lifetimes.md",
     "9 - Project/Untitled"
   ]
 }

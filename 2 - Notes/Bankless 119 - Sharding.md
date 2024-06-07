@@ -1,7 +1,7 @@
 ---
 date: 2024-05-10 08:03
 tags:
-  - "#inprogess"
+  - final
 source: https://www.youtube.com/watch?v=N5p0TB77flM&t=1814s
 ---
 # Bankless 119 - Sharding
