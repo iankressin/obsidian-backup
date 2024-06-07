@@ -12,5 +12,3 @@ source: https://www.youtube.com/watch?v=DEE1GKMbtgw
 - Reference is a pointer that also has lifetime information. E.g.: & has a reference to a lifetime while * doesn't
 
 - Stack is a region of the address space that stores fixed size variables
-
-Hello world
