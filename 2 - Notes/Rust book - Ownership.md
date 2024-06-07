@@ -60,5 +60,6 @@ In the second snippet, the value of the string is being allocated to the heap wh
 
 To avoid that, when a pointer is used the instantiate another Rust understands it as a "move", where the ownership moves from one variable to another and the previous owner gets invalidate.
 
+Hello
 ## References
 
