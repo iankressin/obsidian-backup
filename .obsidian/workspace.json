@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "00d59693dd5204db",
+    "type": "split",
+    "children": [
+      {
+        "id": "93a8fe0a3013d7be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6ac7bbd8ad78856",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9 - Project/Git sync test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6a6e39c737f234d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "71f1850cd95f06f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c90c3e11da8312fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "41063b8c803c7ade",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "53345a979cf5c98c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a9174d52b4a5fc66",
+    "type": "split",
+    "children": [
+      {
+        "id": "f05416faf6b8b141",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f182a6476939e738",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "9 - Project/Git sync test.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "25104f1de355f0fc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "9 - Project/Git sync test.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6e7d665711ca73cc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "83a2a1acaae5dc9b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "9 - Project/Git sync test.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c6ac7bbd8ad78856",
+  "lastOpenFiles": [
+    "9 - Project/L1 <-> L2 messaging.md",
+    "9 - Project/Git sync test.md",
+    "4 - Roadmaps/Ethereum roadmap.md",
+    "9 - Project/Untitled",
+    "4 - Roadmaps/Rust roadmap.md"
+  ]
+}

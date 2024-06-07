@@ -1,4 +1,4 @@
-**Phase 1: Foundational Knowledge**
+%%  %%**Phase 1: Foundational Knowledge**
 
 1. **Blockchain Basics:**
     - Decentralization: How a network operates without a central authority.
