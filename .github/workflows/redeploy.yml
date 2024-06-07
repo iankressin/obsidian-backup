@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Redeploy personal website
-        run: curl -X POST $REDEPLOY_HOOK
+        run: curl -X POST ${{ secrets.REDEPLOY_HOOK }}
