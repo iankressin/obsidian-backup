@@ -1,0 +1,1 @@
+Build a proof of concept rollup in order to better understand the functionalities of these L2s better.
