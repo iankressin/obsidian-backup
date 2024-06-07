@@ -3,7 +3,7 @@ date: 2024-05-31 07:45
 tags:
   - Ethereum
   - final
-description:
+description: The Ethereum scaling solution
 ---
 # Danksharding
 
