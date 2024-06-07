@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Redeploy personal website
+        run: curl -X POST $REDEPLOY_HOOK
