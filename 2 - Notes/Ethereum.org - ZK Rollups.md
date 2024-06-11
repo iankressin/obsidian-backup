@@ -23,7 +23,8 @@ source: https://ethereum.org/pt-br/developers/docs/scaling/zk-rollups/
 
 - Anyone can recreate the current root hash through the transaction batches posted on the L1 *(is it true after EIP-4844?)*
 
-- Most ZK-rollups use a supernode to produce blocks, which is efficient but centralized. If users feel that they are being censored, the L1 contract accept bundled transactions directly. 
+- Most ZK-rollups use a supernode to produce blocks, which is efficient but centralized. If users feel that they are being censored, the L1 contract accept bundled transactions directly.
+
 #### Questions
 
 *Do ZK rollups take advantage of blob space?*
