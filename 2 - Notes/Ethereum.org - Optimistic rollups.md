@@ -8,15 +8,15 @@ source: https://ethereum.org/en/developers/docs/scaling/optimistic-rollups/
 
 - Optimistic rollups executes transactions off-chain, and post their outcome to the layer 1
 
-- To prove that data is valid, optimistic rollups implements a dispute system where after a bundle of transactions is posted on the layer 1, anyone can verify the validity of those transactions.
+- To prove that data is valid, optimistic rollups implements a dispute system where after a bundle of transactions are posted on the layer 1, anyone can verify the validity of those transactions.
 	- If someone spots an invalid transaction, a dispute between the sequencer and the challenger begins
-	- The challenger produces a fraud-proof, where is proves the result of a transaction is invalid
-	- Then a third-party runs the proof, and if the challenger is correct, the sequencer is forced to recalculate the computation and post the correct data on-chain. Also he's forced to pay a sum of ether to the challenger
+	- The challenger produces a fraud-proof, where it proves the result of a transaction is invalid
+	- Then a third-party runs the proof (smart-contract), and if the challenger is correct, the sequencer is forced to recalculate the computation and post the correct data on-chain. Also he's forced to pay a sum of ether to the challenger
 	- If the challenger is wrong, they also need to pay a sum of ether to the sequencer
 
-- This approach is called "Optimistic" because if, in a window of time, no validator challenge to the on-chain data is presented, the data is considered valid and settled on-chain, and the block is considered valid.
+- This approach is called "Optimistic" because if, in a window of time, any validator challenges the on-chain data, the data is considered valid and settled on-chain, and later the block is considered valid.
 
-- Block produces can continue to build on top of unconfirmed blocks, but if a block is considered invalid, then all the blocks built on top of the invalid block are also considered invalid.
+- Block producers can continue to build on top of unconfirmed blocks, but if a block is considered invalid, then all the blocks built on top of the invalid block are also considered invalid.
 
 - Optimistic rollups run a set of smart-contracts of Ethereum L1 that keeps track of blocks, state updates and track users' deposits.
 
@@ -56,3 +56,5 @@ Fraud proof is the process of proving that the current state root hash is wrong,
 *Can sequencers extract MEV? Do them extract MEV?*
 
 *During message exchanges between L1 and L2s who picks up the messages on the L1 to deliver to L2?*
+
+*How much the losing party of a challenge must pay to the other?*
