@@ -25,6 +25,9 @@ source: https://ethereum.org/pt-br/developers/docs/scaling/zk-rollups/
 
 - Most ZK-rollups use a supernode to produce blocks, which is efficient but centralized. If users feel that they are being censored, the L1 contract accept bundled transactions directly.
 
+- ZK-SNARKs require a Common Reference String (CRS), which are public parameters for proving and verifying statements. If the parameters used to create CRS becomes public, then malicious actors can create false proofs.
+	- Multi-party computation ceremony (MPC) can be used to generate CRS, where each participant contributes with some randomness and destroy the data immediately after.
+	- As long as one participant discard their input, the security is guaranteed
 #### Questions
 
 *Do ZK rollups take advantage of blob space?*
