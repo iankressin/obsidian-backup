@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4008ae2bafecfbd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2 - Notes/Rust book - RefCell.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10 - Reading list/Index.md",
+                "file": "2 - Notes/Rust book - RefCell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10 - Reading list/Index.md",
+                "file": "2 - Notes/Rust book - RefCell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10 - Reading list/Index.md"
+                "file": "2 - Notes/Rust book - RefCell.md"
               }
             }
           }
@@ -146,15 +160,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6ac7bbd8ad78856",
+  "active": "4008ae2bafecfbd7",
   "lastOpenFiles": [
+    "2 - Notes/Rust book - Rc.md",
+    "trpl15-03.svg",
+    "2 - Notes/Rust book - Ownership.md",
+    "2 - Notes/Rust book - RefCell.md",
     "1 - Future notes/Rust - Stack frame.md",
     "10 - Reading list/Index.md",
     "1 - Future notes/Rust - Interior mutability.md",
     "1 - Future notes/Rust - Closures.md",
     "2 - Notes/Ethereum.org - ZK Rollups.md",
     "10 - Reading list",
-    "2 - Notes/Rust book - Ownership.md",
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
     "3 - Mini Essays/Danksharding.md",
@@ -162,7 +179,6 @@
     "2 - Notes/Bankless 119 - Sharding.md",
     "6 - Tags/Compilers.md",
     "Hello.md",
-    "2 - Notes/Rust book - Rc.md",
     "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
     "1 - Future notes/Rust - Iterators.md",
     "2 - Notes/Crust of Rust - Lifetime annotations.md",
@@ -173,8 +189,6 @@
     "3 - Full notes/Zero Knowledge Proofs.md",
     "3 - Full notes/Rollups.md",
     "2 - Source material/Staking.md",
-    "2 - Notes/Rust book - Borrowing.md",
-    "3 - Full notes/Smart-pointers.md",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
     "9 - Project/Untitled"
   ]
