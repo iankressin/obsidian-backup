@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/Ethereum.org - ZK Rollups.md",
+                "file": "10 - Reading list/Index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/Ethereum.org - ZK Rollups.md",
+                "file": "10 - Reading list/Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/Ethereum.org - ZK Rollups.md",
+                "file": "10 - Reading list/Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/Ethereum.org - ZK Rollups.md"
+                "file": "10 - Reading list/Index.md"
               }
             }
           }
@@ -149,10 +148,15 @@
   },
   "active": "c6ac7bbd8ad78856",
   "lastOpenFiles": [
+    "1 - Future notes/Rust - Stack frame.md",
+    "10 - Reading list/Index.md",
+    "1 - Future notes/Rust - Interior mutability.md",
+    "1 - Future notes/Rust - Closures.md",
+    "2 - Notes/Ethereum.org - ZK Rollups.md",
+    "10 - Reading list",
     "2 - Notes/Rust book - Ownership.md",
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
-    "2 - Notes/Ethereum.org - ZK Rollups.md",
     "3 - Mini Essays/Danksharding.md",
     "2 - Notes/Boxes, Heaps, and Stacks - Tim McNamara.md",
     "2 - Notes/Bankless 119 - Sharding.md",
@@ -160,10 +164,7 @@
     "Hello.md",
     "2 - Notes/Rust book - Rc.md",
     "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
-    "1 - Future notes/Rust - Closures.md",
-    "1 - Future notes/Rust - Interior mutability.md",
     "1 - Future notes/Rust - Iterators.md",
-    "1 - Future notes/Rust - Stack frame.md",
     "2 - Notes/Crust of Rust - Lifetime annotations.md",
     "2 - Notes/Compilers book - Chapter 1.md",
     "3 - Mini Essays/Beacon Chain.md",
@@ -174,7 +175,6 @@
     "2 - Source material/Staking.md",
     "2 - Notes/Rust book - Borrowing.md",
     "3 - Full notes/Smart-pointers.md",
-    "2 - Notes/Rust book - Box.md",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
     "9 - Project/Untitled"
   ]

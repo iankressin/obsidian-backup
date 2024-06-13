@@ -1,0 +1,2 @@
+- Data Availability and Decentralization: New Techniques for zk-Rollups in Layer 2 Blockchain Networks
+	- link: https://arxiv.org/abs/2403.10828
