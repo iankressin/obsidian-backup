@@ -85,3 +85,8 @@ mod test {
     }
 }
 ```
+- RefCell keeps track of the number of mutable and immutable references are active, in order to mimic the borrow checker, but in run-time. Same rules applies:
+	- One mutable reference
+	- Many immutable references
+
+- RefCell can be combined with Rc to create a mutable value with multiple owners
