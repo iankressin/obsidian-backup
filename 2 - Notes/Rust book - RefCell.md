@@ -5,7 +5,6 @@ tags:
 source: https://doc.rust-lang.org/stable/book/ch15-05-interior-mutability.html
 ---
 
-
 # Rust book - RefCell
 
 - *Interior Mutability*: mutate a variable when there are immutable references to that data inside an unsafe block, and wrap it in a safe API and the outer type is still immutable
