@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/Rust book - RefCell.md",
+                "file": "2 - Notes/EPFsg - Week 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/Rust book - RefCell.md",
+                "file": "2 - Notes/EPFsg - Week 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/Rust book - RefCell.md",
+                "file": "2 - Notes/EPFsg - Week 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/Rust book - RefCell.md"
+                "file": "2 - Notes/EPFsg - Week 2.md"
               }
             }
           }
@@ -162,10 +161,11 @@
   },
   "active": "4008ae2bafecfbd7",
   "lastOpenFiles": [
+    "2 - Notes/Rust book - RefCell.md",
+    "2 - Notes/EPFsg - Week 2.md",
     "2 - Notes/Rust book - Rc.md",
     "trpl15-03.svg",
     "2 - Notes/Rust book - Ownership.md",
-    "2 - Notes/Rust book - RefCell.md",
     "1 - Future notes/Rust - Stack frame.md",
     "10 - Reading list/Index.md",
     "1 - Future notes/Rust - Interior mutability.md",
