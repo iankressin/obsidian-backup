@@ -17,4 +17,8 @@ source: https://epf.wiki/#/eps/week2
 ### Block building
 - Nodes are always gossiping transactions over the p2p network. These transactions form the mempool
 - These transactions are valid to be included in a block: nonce in correct, account has enough balance to pay for the tx
+- In summary, the building process should return a new block and the updated state or an error in case something goes wrong while building the block
+- In the video this is note explicit, but in Ethereum the process of block building doesn't happen at protocol level. External entities are responsible for block building and relaying those blocks to the block producers, aka validators
+
+### State transition function
 - 
