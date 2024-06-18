@@ -17,3 +17,4 @@ source: https://epf.wiki/#/eps/week2
 ### Block building
 - Nodes are always gossiping transactions over the p2p network. These transactions form the mempool
 - These transactions are valid to be included in a block: nonce in correct, account has enough balance to pay for the tx
+- 
