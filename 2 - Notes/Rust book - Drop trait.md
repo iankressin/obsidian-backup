@@ -1,7 +1,7 @@
 ---
 date: 2024-06-05 11:00
 tags:
-  - "#inprogess"
+  - final
 source: https://doc.rust-lang.org/stable/book/ch15-03-drop.html
 ---
 # Rust book - Drop trait

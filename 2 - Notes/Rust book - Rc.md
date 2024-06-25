@@ -1,7 +1,7 @@
 ---
 date: 2024-06-05 11:53
 tags:
-  - "#inprogess"
+  - final
 source: https://doc.rust-lang.org/stable/book/ch15-04-rc.html
 ---
 # Rust book - Rc

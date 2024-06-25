@@ -1,11 +1,9 @@
 ---
 date: 2024-06-11 15:35
 tags:
-  - "#inprogess"
+  - final
 source: https://ethereum.org/pt-br/developers/docs/scaling/zk-rollups/
 ---
-
-
 # Ethereum.org - ZK
 
 - The main difference between ZK and Optimistic rollups is the approach to guarantee the integrity of the off-chain computation result.

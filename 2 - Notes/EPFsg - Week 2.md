@@ -1,7 +1,7 @@
 ---
 date: 2024-06-18 11:20
 tags:
-  - "#inprogess"
+  - final
 source: https://epf.wiki/#/eps/week2
 ---
 # EPFsg - Week 2
@@ -19,6 +19,3 @@ source: https://epf.wiki/#/eps/week2
 - These transactions are valid to be included in a block: nonce in correct, account has enough balance to pay for the tx
 - In summary, the building process should return a new block and the updated state or an error in case something goes wrong while building the block
 - In the video this is note explicit, but in Ethereum the process of block building doesn't happen at protocol level. External entities are responsible for block building and relaying those blocks to the block producers, aka validators
-
-### State transition function
-- 

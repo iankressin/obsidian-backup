@@ -1,7 +1,7 @@
 ---
 date: 2024-04-26 10:12
 tags:
-  - "#inprogess"
+  - final
 source: https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
 ---
 # Rust book - Lifetimes
