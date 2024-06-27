@@ -161,9 +161,10 @@
   },
   "active": "4008ae2bafecfbd7",
   "lastOpenFiles": [
+    "2 - Notes/Error handling in Rust.md",
+    "2 - Notes/Eth2 Book - Slashing.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
     "2 - Notes/Ethereum.org - ZK Rollups.md",
-    "2 - Notes/Eth2 Book - Slashing.md",
     "4 - Roadmaps/Ethereum roadmap.md",
     "2 - Notes/Rust book - Rc.md",
     "2 - Notes/Rust book - Ownership.md",
@@ -188,7 +189,6 @@
     "10 - Reading list",
     "3 - Mini Essays/Danksharding.md",
     "6 - Tags/Compilers.md",
-    "Hello.md",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
     "9 - Project/Untitled"
   ]
