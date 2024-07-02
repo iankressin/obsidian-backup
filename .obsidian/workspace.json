@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md",
+                "file": "11 - Research notes/Ethereum Query Language.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md",
+                "file": "11 - Research notes/Ethereum Query Language.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md",
+                "file": "11 - Research notes/Ethereum Query Language.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md"
+                "file": "11 - Research notes/Ethereum Query Language.md"
               }
             }
           }
@@ -161,8 +161,11 @@
   },
   "active": "4008ae2bafecfbd7",
   "lastOpenFiles": [
-    "2 - Notes/Error handling in Rust.md",
+    "10 - Reading list/Index.md",
+    "11 - Research notes/Ethereum Query Language.md",
+    "11 - Research notes",
     "2 - Notes/Eth2 Book - Slashing.md",
+    "2 - Notes/Error handling in Rust.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
     "2 - Notes/Ethereum.org - ZK Rollups.md",
     "4 - Roadmaps/Ethereum roadmap.md",
@@ -183,12 +186,10 @@
     "2 - Notes/Rust book - RefCell.md",
     "trpl15-03.svg",
     "1 - Future notes/Rust - Stack frame.md",
-    "10 - Reading list/Index.md",
     "1 - Future notes/Rust - Interior mutability.md",
     "1 - Future notes/Rust - Closures.md",
     "10 - Reading list",
     "3 - Mini Essays/Danksharding.md",
-    "6 - Tags/Compilers.md",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
     "9 - Project/Untitled"
   ]
