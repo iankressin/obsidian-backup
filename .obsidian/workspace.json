@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 - Reading list/Index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4008ae2bafecfbd7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "11 - Research notes/Ethereum Query Language.md",
+                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:inprogess",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "11 - Research notes/Ethereum Query Language.md",
+                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "11 - Research notes/Ethereum Query Language.md",
+                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "11 - Research notes/Ethereum Query Language.md"
+                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md"
               }
             }
           }
@@ -159,9 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4008ae2bafecfbd7",
+  "active": "c6ac7bbd8ad78856",
   "lastOpenFiles": [
+    "2 - Notes/Blobsplanning.md",
+    "2 - Notes/EIP-4844 Fee Market Analysis.md",
+    "3 - Mini Essays/4844 Fee Market.md",
+    "3 - Mini Essays/Beacon Chain.md",
+    "9 - Project/Proof of concept rollup.md",
+    "9 - Project/L1 <-> L2 messaging.md",
     "10 - Reading list/Index.md",
+    "9 - Project/Git sync test.md",
+    "2 - Notes/Untitled.md",
     "11 - Research notes/Ethereum Query Language.md",
     "11 - Research notes",
     "2 - Notes/Eth2 Book - Slashing.md",
@@ -180,16 +176,8 @@
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
     "2 - Notes/EPFsg - Week 2.md",
     "2 - Notes/Crust of Rust - Lifetime annotations.md",
-    "2 - Notes/Compilers book - Chapter 1.md",
-    "2 - Notes/Boxes, Heaps, and Stacks - Tim McNamara.md",
-    "2 - Notes/Bankless 119 - Sharding.md",
-    "2 - Notes/Rust book - RefCell.md",
     "trpl15-03.svg",
-    "1 - Future notes/Rust - Stack frame.md",
-    "1 - Future notes/Rust - Interior mutability.md",
-    "1 - Future notes/Rust - Closures.md",
     "10 - Reading list",
-    "3 - Mini Essays/Danksharding.md",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
     "9 - Project/Untitled"
   ]
