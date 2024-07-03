@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md",
+                "file": "2 - Notes/Blobsplanning.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md",
+                "file": "2 - Notes/Blobsplanning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md",
+                "file": "2 - Notes/Blobsplanning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/EIP-4844 Fee Market Analysis.md"
+                "file": "2 - Notes/Blobsplanning.md"
               }
             }
           }
@@ -149,8 +148,8 @@
   },
   "active": "c6ac7bbd8ad78856",
   "lastOpenFiles": [
-    "2 - Notes/Blobsplanning.md",
     "2 - Notes/EIP-4844 Fee Market Analysis.md",
+    "2 - Notes/Blobsplanning.md",
     "3 - Mini Essays/4844 Fee Market.md",
     "3 - Mini Essays/Beacon Chain.md",
     "9 - Project/Proof of concept rollup.md",
