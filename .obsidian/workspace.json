@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md",
+                "file": "11 - Research notes/Message do 2077 Development Research.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md",
+                "file": "11 - Research notes/Message do 2077 Development Research.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md",
+                "file": "11 - Research notes/Message do 2077 Development Research.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md"
+                "file": "11 - Research notes/Message do 2077 Development Research.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "c6ac7bbd8ad78856",
   "lastOpenFiles": [
-    "2 - Notes/Blobsplanning.md",
+    "11 - Research notes/Ethereum Query Language.md",
+    "11 - Research notes/Message do 2077 Development Research.md",
     "2 - Notes/What makes a good REPL?.md",
+    "2 - Notes/Blobsplanning.md",
     "2 - Notes/EIP-4844 Fee Market Analysis.md",
     "3 - Mini Essays/4844 Fee Market.md",
     "3 - Mini Essays/Beacon Chain.md",
@@ -158,7 +160,6 @@
     "10 - Reading list/Index.md",
     "9 - Project/Git sync test.md",
     "2 - Notes/Untitled.md",
-    "11 - Research notes/Ethereum Query Language.md",
     "11 - Research notes",
     "2 - Notes/Eth2 Book - Slashing.md",
     "2 - Notes/Error handling in Rust.md",
@@ -174,7 +175,6 @@
     "2 - Notes/Rust book - Box.md",
     "2 - Notes/Rust book - Borrowing.md",
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
-    "2 - Notes/EPFsg - Week 2.md",
     "trpl15-03.svg",
     "10 - Reading list",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
