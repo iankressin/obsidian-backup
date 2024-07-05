@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/Blobsplanning.md",
+                "file": "2 - Notes/What makes a good REPL?.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 408.5
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/Blobsplanning.md",
+                "file": "2 - Notes/What makes a good REPL?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/Blobsplanning.md",
+                "file": "2 - Notes/What makes a good REPL?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/Blobsplanning.md"
+                "file": "2 - Notes/What makes a good REPL?.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "c6ac7bbd8ad78856",
   "lastOpenFiles": [
-    "2 - Notes/EIP-4844 Fee Market Analysis.md",
     "2 - Notes/Blobsplanning.md",
+    "2 - Notes/What makes a good REPL?.md",
+    "2 - Notes/EIP-4844 Fee Market Analysis.md",
     "3 - Mini Essays/4844 Fee Market.md",
     "3 - Mini Essays/Beacon Chain.md",
     "9 - Project/Proof of concept rollup.md",
@@ -174,7 +175,6 @@
     "2 - Notes/Rust book - Borrowing.md",
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
     "2 - Notes/EPFsg - Week 2.md",
-    "2 - Notes/Crust of Rust - Lifetime annotations.md",
     "trpl15-03.svg",
     "10 - Reading list",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
