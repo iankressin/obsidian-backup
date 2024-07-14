@@ -4,8 +4,6 @@ tags:
   - "#inprogess"
 source: https://eth2book.info/capella/part2/incentives/slashing/
 ---
-
-
 # Eth2 Book - Slashing
 
 - Slashing is a punishment applied to validators who try to cheat the consensus rules. The protocol slashes a piece of the offender's stake and can even result in the ejection of the bad actor from the protocol.
