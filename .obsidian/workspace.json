@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md",
+                "file": "2 - Notes/What makes a good REPL?.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5,
-    "collapsed": true
+    "width": 408.5
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md",
+                "file": "2 - Notes/What makes a good REPL?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md",
+                "file": "2 - Notes/What makes a good REPL?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/Eth2 Book - Slashing.md"
+                "file": "2 - Notes/What makes a good REPL?.md"
               }
             }
           }
@@ -150,8 +149,8 @@
   },
   "active": "288dca703ea66991",
   "lastOpenFiles": [
-    "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
     "2 - Notes/Eth2 Book - Slashing.md",
+    "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
     "2 - Notes/Rust book - Deref trait.md",

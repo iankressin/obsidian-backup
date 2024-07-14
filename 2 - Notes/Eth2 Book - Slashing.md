@@ -30,6 +30,4 @@ source: https://eth2book.info/capella/part2/incentives/slashing/
   - `3`: the slashing multiplier constant
   - `S`: sum of increments in the list of slashed validators over the last 36 days
   - `B`: validator effective balance
-  - `T`: total increments
-
-   
+  - `T`: total increments%%  %%

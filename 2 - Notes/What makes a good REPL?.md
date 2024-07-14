@@ -12,4 +12,4 @@ source: https://vvvvalvalval.github.io/posts/what-makes-a-good-repl.html
 
 - Unit tests answer the question "does it work?" but a REPL answer the questions: "how does it work" and "what does it look like?"
 
-- If you've ever played live music on stage without being able to hear your own instrument, then you have a good idea of how I feel when I program without a REPL - powerless and unconfident.
+- If you've ever played live music on stage without being able to hear your own instrument, then you have a good idea of how I feel when I program without a REPL - powerless and unconfident
