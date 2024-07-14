@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md",
+                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md",
+                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md",
+                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/What makes a good REPL?.md"
+                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "288dca703ea66991",
   "lastOpenFiles": [
+    "2 - Notes/What makes a good REPL?.md",
     "2 - Notes/Eth2 Book - Slashing.md",
     "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
@@ -172,7 +173,6 @@
     "Excalidraw/Drawing 2024-05-26 20.01.17.excalidraw.md",
     "11 - Research notes/Message do 2077 Development Research.md",
     "11 - Research notes/Ethereum Query Language.md",
-    "2 - Notes/What makes a good REPL?.md",
     "2 - Notes/EIP-4844 Fee Market Analysis.md",
     "3 - Mini Essays/4844 Fee Market.md",
     "3 - Mini Essays/Beacon Chain.md",

@@ -1,7 +1,7 @@
 ---
 date: 2024-07-14 07:13
 tags:
-  - "#inprogess"
+  - final
 source: https://www.youtube.com/watch?v=yb5zpo5WDG4
 ---
 # Andrew Huberman - Tools to improve focus & Concentration
