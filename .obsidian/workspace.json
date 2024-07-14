@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md"
+                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md"
               }
             }
           }
@@ -150,7 +150,10 @@
   "active": "288dca703ea66991",
   "lastOpenFiles": [
     "2 - Notes/What makes a good REPL?.md",
+    "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
+    "3 - Mini Essays/4844 Fee Market.md",
     "2 - Notes/Eth2 Book - Slashing.md",
+    "2 - Notes/EIP-4844 Fee Market Analysis.md",
     "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
@@ -173,12 +176,9 @@
     "Excalidraw/Drawing 2024-05-26 20.01.17.excalidraw.md",
     "11 - Research notes/Message do 2077 Development Research.md",
     "11 - Research notes/Ethereum Query Language.md",
-    "2 - Notes/EIP-4844 Fee Market Analysis.md",
-    "3 - Mini Essays/4844 Fee Market.md",
     "3 - Mini Essays/Beacon Chain.md",
     "9 - Project/Proof of concept rollup.md",
     "9 - Project/L1 <-> L2 messaging.md",
-    "10 - Reading list/Index.md",
     "11 - Research notes",
     "10 - Reading list",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
