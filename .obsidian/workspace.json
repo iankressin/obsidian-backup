@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
+                "file": "12 - Goals/Goals.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "37843897d0e0a829",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
+                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
+                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md"
+                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md"
               }
             }
           }
@@ -147,10 +158,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "288dca703ea66991",
+  "active": "37843897d0e0a829",
   "lastOpenFiles": [
-    "2 - Notes/What makes a good REPL?.md",
+    "12 - Goals/Goals.md",
+    "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md",
     "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
+    "12 - Goals",
+    "2 - Notes/What makes a good REPL?.md",
     "3 - Mini Essays/4844 Fee Market.md",
     "2 - Notes/Eth2 Book - Slashing.md",
     "2 - Notes/EIP-4844 Fee Market Analysis.md",
@@ -177,8 +191,6 @@
     "11 - Research notes/Message do 2077 Development Research.md",
     "11 - Research notes/Ethereum Query Language.md",
     "3 - Mini Essays/Beacon Chain.md",
-    "9 - Project/Proof of concept rollup.md",
-    "9 - Project/L1 <-> L2 messaging.md",
     "11 - Research notes",
     "10 - Reading list",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
