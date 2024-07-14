@@ -26,7 +26,7 @@ source: https://eth2book.info/capella/part2/incentives/slashing/
 - During these 36 days, the validator is still part of the validator set, but its unable to fulfill its duties of signing attestations and proposing blocks, therefore it continues to bleed ethers away
 
 - A third penalty is applied 18 days after being slashed, which is called correlation penalty. It punish mass attack events to the chain, by applying greater slashing punishments when more slashable offences are committed in a similar window of time 
-  - `Correlation penalty` = $\min \left( B, \frac{3SB}{T} \right)$
+  - `Correlation penalty = min (B, 3SB / T)`
   - `3`: the slashing multiplier constant
   - `S`: sum of increments in the list of slashed validators over the last 36 days
   - `B`: validator effective balance

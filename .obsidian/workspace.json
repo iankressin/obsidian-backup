@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+                "file": "2 - Notes/Eth2 Book - Slashing.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+                "file": "2 - Notes/Eth2 Book - Slashing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+                "file": "2 - Notes/Eth2 Book - Slashing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md"
+                "file": "2 - Notes/Eth2 Book - Slashing.md"
               }
             }
           }
@@ -150,12 +150,12 @@
   },
   "active": "288dca703ea66991",
   "lastOpenFiles": [
+    "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
     "2 - Notes/Eth2 Book - Slashing.md",
     "2 - Notes/Ethereum.org - Layer 2 scaling.md",
     "2 - Notes/Ethereum.org - Optimistic rollups.md",
     "2 - Notes/Rust book - Deref trait.md",
     "2 - Notes/Rust book - Drop trait.md",
-    "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
     "2 - Notes/Compilers book - Chapter 1.md",
     "2 - Notes/Boxes, Heaps, and Stacks - Tim McNamara.md",
     "2 - Notes/Blobsplanning.md",
