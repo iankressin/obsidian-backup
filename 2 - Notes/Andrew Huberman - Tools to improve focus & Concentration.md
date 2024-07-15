@@ -65,7 +65,7 @@ source: https://www.youtube.com/watch?v=yb5zpo5WDG4
  - **Recommendation:** uncomfortably cold, but safe to stay in for 1 - 5 minutes. 
 
 #### Meditation
-- Set a timer for about 13 minutes, sit or lie down, and with the eyes closed solely concentrate on breathing and focus on bringing awareness to a point about an inch behing the forehead.
+- Set a timer for about 13 minutes, sit or lie down, and with the eyes closed solely concentrate on breathing and focus on bringing awareness to a point about an inch behind the forehead.
 - The focus and concentration will drift away from the designed point every 10 to 20 seconds. The goal of this practice is to keep bringing back focus to breathing and the forehead point, in order to train the ability to refocus from a non-focus or diminished focus states.
 - **Studies shown that this practice have positive effects on sleep and memory**
 - **Recommendation:** As this meditation activates the prefrontal cortex, and can increase alertness, it shouldn't be done 4 hours prior the bedtime.
