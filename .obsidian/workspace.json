@@ -23,9 +23,11 @@
             "id": "37843897d0e0a829",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md"
+                "file": "11 - Research notes/EQL Release notes.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md",
+                "file": "11 - Research notes/EQL Release notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md",
+                "file": "11 - Research notes/EQL Release notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md"
+                "file": "11 - Research notes/EQL Release notes.md"
               }
             }
           }
@@ -158,15 +160,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c90c3e11da8312fe",
+  "active": "37843897d0e0a829",
   "lastOpenFiles": [
-    "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+    "11 - Research notes/Ethereum Query Language.md",
+    "11 - Research notes/EQL Release notes.md",
     "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md",
-    "Excalidraw/Scripts/Downloaded/Add Link to New Page and Open.md",
     "12 - Personal/Goals.md",
+    "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
+    "Excalidraw/Scripts/Downloaded/Add Link to New Page and Open.md",
     "trpl15-03.svg",
     "11 - Research notes/Message do 2077 Development Research.md",
-    "11 - Research notes/Ethereum Query Language.md",
     "8 - Schedule/Weekly Schedule.md",
     "8 - Schedule/Review.md",
     "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
@@ -187,7 +190,6 @@
     "Excalidraw/Drawing 2024-07-14 08.25.01.excalidraw.md",
     "Excalidraw/arrow-model-hlp.excalidraw.md",
     "Excalidraw/Drawing 2024-07-14 07.25.34.excalidraw.md",
-    "Hello.md",
     "Excalidraw/Scripts/Downloaded/Add Link to New Page and Open.svg",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
