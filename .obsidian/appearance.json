@@ -1,5 +1,8 @@
 {
   "accentColor": "",
-  "cssTheme": "Everforest",
-  "theme": "obsidian"
+  "cssTheme": "Obsidian gruvbox",
+  "theme": "obsidian",
+  "textFontFamily": "EB Garamond",
+  "monospaceFontFamily": "JetBrainsMonoNL Nerd Font Mono",
+  "baseFontSize": 17
 }

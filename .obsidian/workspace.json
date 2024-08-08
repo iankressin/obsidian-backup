@@ -4,45 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "93a8fe0a3013d7be",
+        "id": "581424fd983aaf7e",
         "type": "tabs",
         "children": [
           {
-            "id": "288dca703ea66991",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "12 - Personal/Goals.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "37843897d0e0a829",
+            "id": "f7fa17af656998b0",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2024-05-26 20.01.17.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "e8dc786dfde3197f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "11 - Research notes/Etherpedia AI agent.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a9174d52b4a5fc66",
@@ -109,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "11 - Research notes/Etherpedia AI agent.md",
+                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "11 - Research notes/Etherpedia AI agent.md",
+                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "11 - Research notes/Etherpedia AI agent.md"
+                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md"
               }
             }
           }
@@ -171,42 +145,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e8dc786dfde3197f",
+  "active": "f7fa17af656998b0",
   "lastOpenFiles": [
+    "Excalidraw/etherpedia-wireframe.excalidraw.md",
+    "Excalidraw/focus-u-shape.excalidraw.md",
+    "12 - Personal/Goals.md",
+    "Excalidraw/Drawing 2024-05-26 20.01.17.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-02 11.08.14.excalidraw.md",
+    "11 - Research notes/EQL/social-media/release.md",
+    "11 - Research notes/EQL/general/funding-options.md",
+    "12 - Personal/Investments.md",
+    "11 - Research notes/EQL/general/ethereum-confs.md",
+    "11 - Research notes/EQL/general/eth-online-application.md",
+    "11 - Research notes/EQL/general/readme.md",
+    "11 - Research notes/EQL/general",
+    "11 - Research notes/EQL/Untitled.md",
+    "11 - Research notes/EQL/pitch/discord-pitch.md",
+    "11 - Research notes/EQL/pitch",
+    "11 - Research notes/EQL/research/questions.md",
+    "11 - Research notes/EQL/research",
+    "11 - Research notes/Etherpedia/Etherpedia AI agent.md",
+    "11 - Research notes/Etherpedia AI agent.md",
+    "11 - Research notes/Etherpedia",
+    "11 - Research notes/EQL/social-media",
+    "11 - Research notes/EQL/blog/alpha-release/Release post.md",
+    "11 - Research notes/EQL/blog/alpha-release/Release edit 2..md",
+    "11 - Research notes/EQL/blog/alpha-release/Release edit 1..md",
+    "11 - Research notes/EQL/blog/alpha-release/Release post structure.md",
+    "11 - Research notes/EQL/blog/alpha-release",
+    "11 - Research notes/EQL/blog",
+    "11 - Research notes/EQL",
     "11 - Research notes/Ethereum Query Language.md",
     "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
-    "Excalidraw/Drawing 2024-05-26 20.01.17.excalidraw.md",
     "Excalidraw/Drawing 2024-05-26 20.04.47.excalidraw.md",
     "Excalidraw/Drawing 2024-07-14 07.25.34.excalidraw.md",
-    "11 - Research notes/Etherpedia AI agent.md",
     "11 - Research notes/Message do 2077 Development Research.md",
     "11 - Research notes/EQL Release notes.md",
-    "Excalidraw/etherpedia-wireframe.excalidraw.md",
-    "Excalidraw/arrow-model-hlp.excalidraw.md",
-    "Excalidraw/focus-u-shape.excalidraw.md",
-    "2 - Notes/Andrew Huberman - Tools to improve focus & Concentration.md",
-    "4 - Roadmaps/Rust roadmap.md",
-    "4 - Roadmaps/Ethereum roadmap.md",
-    "Excalidraw/goals.excalidraw.md",
-    "Excalidraw/Drawing 2024-07-14 20.32.54.excalidraw.md",
-    "12 - Personal/Goals.md",
-    "Excalidraw/Scripts/Downloaded/Add Link to New Page and Open.md",
     "trpl15-03.svg",
-    "8 - Schedule/Weekly Schedule.md",
-    "8 - Schedule/Review.md",
-    "2 - Notes/The Hitchhiker's Guide to Ethereum - Danksharding.md",
     "12 - Personal",
-    "2 - Notes/What makes a good REPL?.md",
-    "3 - Mini Essays/4844 Fee Market.md",
-    "2 - Notes/Eth2 Book - Slashing.md",
-    "2 - Notes/EIP-4844 Fee Market Analysis.md",
-    "2 - Notes/Ethereum.org - Layer 2 scaling.md",
     "Excalidraw/Scripts/Downloaded/Add Link to New Page and Open.svg",
     "Excalidraw/Scripts/Downloaded",
-    "Excalidraw/Scripts",
-    "11 - Research notes",
-    "10 - Reading list",
-    "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp",
-    "9 - Project/Untitled"
+    "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp"
   ]
 }
