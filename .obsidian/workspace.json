@@ -11,9 +11,11 @@
             "id": "f7fa17af656998b0",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md"
+                "file": "13- 2077/Projects/Bounties/Specs.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
+                "file": "13- 2077/Projects/Bounties/Specs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
+                "file": "13- 2077/Projects/Bounties/Specs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md"
+                "file": "13- 2077/Projects/Bounties/Specs.md"
               }
             }
           }
@@ -147,6 +149,13 @@
   },
   "active": "f7fa17af656998b0",
   "lastOpenFiles": [
+    "13- 2077/Projects/Specs Template.md",
+    "13- 2077/Projects/Bounties/Specs.md",
+    "13- 2077/Projects/Bounties",
+    "13- 2077/Projects/Etherpedia/Etherpedia AI agent.md",
+    "13- 2077/Projects",
+    "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
+    "13- 2077",
     "Excalidraw/etherpedia-wireframe.excalidraw.md",
     "Excalidraw/focus-u-shape.excalidraw.md",
     "12 - Personal/Goals.md",
@@ -164,9 +173,8 @@
     "11 - Research notes/EQL/pitch",
     "11 - Research notes/EQL/research/questions.md",
     "11 - Research notes/EQL/research",
-    "11 - Research notes/Etherpedia/Etherpedia AI agent.md",
     "11 - Research notes/Etherpedia AI agent.md",
-    "11 - Research notes/Etherpedia",
+    "13- 2077/Projects/Etherpedia",
     "11 - Research notes/EQL/social-media",
     "11 - Research notes/EQL/blog/alpha-release/Release post.md",
     "11 - Research notes/EQL/blog/alpha-release/Release edit 2..md",
@@ -174,17 +182,11 @@
     "11 - Research notes/EQL/blog/alpha-release/Release post structure.md",
     "11 - Research notes/EQL/blog/alpha-release",
     "11 - Research notes/EQL/blog",
-    "11 - Research notes/EQL",
     "11 - Research notes/Ethereum Query Language.md",
-    "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
     "Excalidraw/Drawing 2024-05-26 20.04.47.excalidraw.md",
     "Excalidraw/Drawing 2024-07-14 07.25.34.excalidraw.md",
-    "11 - Research notes/Message do 2077 Development Research.md",
-    "11 - Research notes/EQL Release notes.md",
     "trpl15-03.svg",
-    "12 - Personal",
     "Excalidraw/Scripts/Downloaded/Add Link to New Page and Open.svg",
-    "Excalidraw/Scripts/Downloaded",
     "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp"
   ]
 }
