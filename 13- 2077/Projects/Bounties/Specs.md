@@ -27,12 +27,15 @@ Creating a centralized repository of tasks for various projects within the Ether
 
 # Success Metrics
 
-<aside> 🎖️ Determine how you measure success
-
-</aside>
-
+<aside> 🎖️ Determine how you measure success</aside>
+##### Phase 1 - Beta
+- Functional MVP
+	- Projects are able to register, create bounties, see all their listings and manage submissions
+	- Users can register, create a simple profile, see all listed bounties, and submit their input
+- One project active listing bounties (probably Collective) and rewarding users
 ---
 
 # Key Features
 <aside> ⭐ What are you going to build and what do you not want to build? The second part is as important as the first part because the scope is determined.</aside>
 
+- 
