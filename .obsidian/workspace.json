@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c60c642cd92b6b74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "13- 2077/Projects/Bounties/Specs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -147,7 +160,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f7fa17af656998b0",
+  "active": "c60c642cd92b6b74",
   "lastOpenFiles": [
     "13- 2077/Projects/Specs Template.md",
     "13- 2077/Projects/Bounties/Specs.md",
