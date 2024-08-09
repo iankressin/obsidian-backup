@@ -37,5 +37,10 @@ Creating a centralized repository of tasks for various projects within the Ether
 
 # Key Features
 <aside> ⭐ What are you going to build and what do you not want to build? The second part is as important as the first part because the scope is determined.</aside>
-
-- 
+#### Want to build
+- Create bounty
+- Submit to bounty
+- List all bounties
+- Public profiles (users and projects)
+#### Not want to build
+- Middleman for bounty reward
