@@ -12,7 +12,7 @@
 - Username
 - Profile picture
 - About
-- Skills
+- Skills)
 ### Bounties
 - ID
 - Sponsor ID

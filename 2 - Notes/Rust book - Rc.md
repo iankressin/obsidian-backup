@@ -33,4 +33,4 @@ fn main() {
 
 ### Questions
 *How a Rc is different than a regular reference?*\
-A regular reference can only have a single owner. Rcs, on the other hand, can have multiple ownersj
+A regular reference can only have a single owner. Rcs, on the other hand, can have multiple owners
