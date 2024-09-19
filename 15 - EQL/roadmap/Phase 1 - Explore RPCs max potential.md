@@ -14,6 +14,7 @@ Exhausting RPCs doesn't mean to squeeze every RPC method into the language. Inst
 - RPC rate limits
 ### Alpha roadmap
 #### v0.1.3-alpha
+
 - [ ] Logs and filters
 	- `GET topic0, topic1 FROM log WHERE block latest address 0x0 ON eth`
 - [ ] Dump query results to json, parquet, and, csv
@@ -43,3 +44,4 @@ Exhausting RPCs doesn't mean to squeeze every RPC method into the language. Inst
 	- `GET nonce, balance FROM vitalik.eth WHERE block 1:10 ON custom-1`
 #### v0.1.7-alpha
  - [ ] Codebase refactor
+ - [ ] Documentation

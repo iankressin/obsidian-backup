@@ -32,7 +32,7 @@ fn main() {
 
 #### Atomic Reference Counting
 - [[Rust book - Rc]] is not enough to share mutex references along threads, since it doesn't use any concurrency primitives, which can lead to make sure changes to counter can't be interrupted by another thread
-- Arc uses a concurrency primitive called atomic, which makes *Mutex* shareable across threads
+	- Arc uses a concurrency primitive called atomic, which makes *Mutex* shareable across threads
 ```rust
 use std::sync::{Arc, Mutex};
 use std::thread;

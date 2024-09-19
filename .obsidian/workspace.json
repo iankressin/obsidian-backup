@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "14 - Madeiraria/Marketing.md",
+                "file": "15 - EQL/research/EQL vs Dune.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "14 - Madeiraria/Marketing.md",
+                "file": "15 - EQL/research/EQL vs Dune.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "14 - Madeiraria/Marketing.md",
+                "file": "15 - EQL/research/EQL vs Dune.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "14 - Madeiraria/Marketing.md"
+                "file": "15 - EQL/research/EQL vs Dune.md"
               }
             }
           }
@@ -174,8 +174,28 @@
   },
   "active": "2f7ff29a992f3bb5",
   "lastOpenFiles": [
-    "13- 2077/Projects/Bounties/Entities.md",
     "14 - Madeiraria/Marketing.md",
+    "Untitled 2.canvas",
+    "2024-09-18.md",
+    "15 - EQL/applications/ESP.md",
+    "15 - EQL/applications/LLM knowledge base.md",
+    "15 - EQL/applications",
+    "15 - EQL/Untitled 1.md",
+    "15 - EQL/research/EQL vs Dune.md",
+    "13- 2077/Projects/Bounties/Review Escrow Options REVIEW CONTENT.md",
+    "Pasted image 20240917200111.png",
+    "Pasted image 20240917195639.png",
+    "Pasted image 20240917195539.png",
+    "Pasted image 20240917193803.png",
+    "Pasted image 20240917162258.png",
+    "Pasted image 20240917160402.png",
+    "Pasted image 20240917160153.png",
+    "Pasted image 20240915225140.png",
+    "Pasted image 20240915180001.png",
+    "15 - EQL/research/How to optimize large query speeds?.md",
+    "15 - EQL/roadmap/Phase 2 - Expanding data extraction capabilities.md",
+    "Pasted image 20240914115654.png",
+    "13- 2077/Projects/Bounties/Entities.md",
     "2 - Notes/Rust book - Shared-State Concurrency.md",
     "15 - EQL/roadmap/Phase 1 - Explore RPCs max potential.md",
     "15 - EQL/blog/alpha-release/Release post.md",
@@ -201,19 +221,6 @@
     "Untitled 1.canvas",
     "Untitled.canvas",
     "2 - Notes/A Specification for the Unchained Index.md",
-    "14 - Madeiraria/Transporte.md",
-    "Untitled.md",
-    "Excalidraw/Drawing 2024-08-09 17.38.28.excalidraw.md",
-    "14 - Madeiraria/Embalanges.md",
-    "14 - Madeiraria/Estantes.md",
-    "14 - Madeiraria",
-    "13- 2077/Projects/Bounties/Specs.md",
-    "13- 2077/Projects/Specs Template.md",
-    "13- 2077/Projects/Bounties",
-    "13- 2077/Projects/Etherpedia/Etherpedia AI agent.md",
-    "Excalidraw/etherpedia-ai-agent-arch.excalidraw.md",
-    "trpl15-03.svg",
-    "Excalidraw/Scripts/Downloaded/Add Link to New Page and Open.svg",
-    "5 - Assets/Beacon-Chain-Checkpoints.jpg.webp"
+    "14 - Madeiraria"
   ]
 }
