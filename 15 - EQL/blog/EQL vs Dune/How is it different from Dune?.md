@@ -6,17 +6,15 @@ The analysis will begin by giving a high level description of both projects, the
 Dune is a data analytics platform designed for querying and visualizing blockchain data, primarily focused on Ethereum and other related blockchains such as Binance Smart Chain, Polygon, and Optimism. It provides users with the ability to run SQL queries on publicly available on-chain data, making it possible to extract, analyze, and visualize information from these blockchains. Users interact with the data primarily through a SQL-based query engine that supports custom and predefined queries, enhanced by caching and parallel processing for performance. The platform offers interactive dashboards for visualization, supporting various chart types and dynamic filtering, and facilitates collaboration through public sharing and forking of dashboards.
 
 EVM Query Language is a data extraction tool that provides users with a SQL-like language to run queries and extract data from EVM chains. The syntax is being actively develop to make the life of researchers and developers easier when in comes to accessing on-chain data. At the current stage, EQL translates the user queries into JSON-RPC requests, which make it an efficient and easy way to query the blockchain. The end-goal of the project is to provide a fully decentralized storage engine, where anyone will be able to query EVM chains using a relational approach, like in SQL databases. Unlike Dune, EQL doesn't aim to index different smart-contracts and decode different on-chain data.
-
-
 ## How are the projects similar?
-
-
+The question that gives the title of this article shows when we're talking about Ethereum and SQL think of Dune.
 
 
 ## When should you use EQL
 - Quick exploration of data
 - Quickly check Ethereum state
 - Check data about one or many accounts
+- Query different objects that can't be cached
 
 
 ## Purpose and Approach
