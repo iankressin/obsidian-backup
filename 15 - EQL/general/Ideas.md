@@ -1,0 +1,1 @@
+- Create a CLI project that uses EQL to monitor on-chain activity in real-time. User define the metrics, define the visualization and this project creates a real-time dashboard with data being updated in realtime.

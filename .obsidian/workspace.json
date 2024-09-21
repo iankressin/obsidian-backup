@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13- 2077/Projects/Bounties/Specs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2f7ff29a992f3bb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "15 - EQL/research/EQL vs Dune.md",
+                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "15 - EQL/research/EQL vs Dune.md",
+                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "15 - EQL/research/EQL vs Dune.md",
+                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "15 - EQL/research/EQL vs Dune.md"
+                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md"
               }
             }
           }
@@ -172,8 +160,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2f7ff29a992f3bb5",
+  "active": "c90c3e11da8312fe",
   "lastOpenFiles": [
+    "15 - EQL/blog/Untitled.md",
+    "15 - EQL/blog/EQL vs Dune",
+    "15 - EQL/blog/How is it different from Dune?.md",
+    "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
+    "13- 2077/Projects/Bounties/Specs.md",
+    "15 - EQL/general/Ideas.md",
     "14 - Madeiraria/Marketing.md",
     "Untitled 2.canvas",
     "2024-09-18.md",
@@ -181,7 +175,6 @@
     "15 - EQL/applications/LLM knowledge base.md",
     "15 - EQL/applications",
     "15 - EQL/Untitled 1.md",
-    "15 - EQL/research/EQL vs Dune.md",
     "13- 2077/Projects/Bounties/Review Escrow Options REVIEW CONTENT.md",
     "Pasted image 20240917200111.png",
     "Pasted image 20240917195639.png",
@@ -207,9 +200,6 @@
     "15 - EQL/blog/alpha-release/Release post structure.md",
     "15 - EQL/general/eth-online-application.md",
     "15 - EQL/general/funding-options.md",
-    "15 - EQL/general/ethereum-confs.md",
-    "15 - EQL/research/questions.md",
-    "15 - EQL/Untitled.md",
     "15 - EQL/blog/alpha-release",
     "15 - EQL/social-media",
     "15 - EQL/research",
@@ -219,8 +209,6 @@
     "15 - EQL/blog",
     "15 - EQL",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "2 - Notes/A Specification for the Unchained Index.md",
-    "14 - Madeiraria"
+    "Untitled.canvas"
   ]
 }
