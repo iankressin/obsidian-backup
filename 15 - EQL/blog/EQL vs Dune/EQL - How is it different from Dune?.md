@@ -6,18 +6,75 @@ Dune is a data analytics platform designed for querying and visualizing blockcha
 
 EVM Query Language (EQL) is a data extraction tool that offers users a SQL-like language to execute queries and retrieve data from EVM chains. The syntax is currently under active development to simplify access to on-chain data for researchers and developers. At its present stage, EQL translates user queries into JSON-RPC requests, providing an efficient and straightforward method for querying the blockchain. The ultimate objective of the project is to create a fully decentralized storage engine, enabling anyone to query EVM chains using a relational approach similar to SQL databases. Unlike Dune, EQL does not aim to index or decode various smart contracts and on-chain data.
 ## How are the projects different?
-Dune is a platform focused on efficient queries and data visualization. The platform started focused solely on the Ethereum ecosystem but has expanded their operations across all the blockchain space, from Bitcoin do SQLana. It uses a fork of Trino as query engine, to support Ethereum types natively such as addresses and transaction hashes. Trino is a query engine where the execution layer is decoupled from the storage layer, which contrary to good old SQL databases where the query execution and storage are build into a monolith, Trino allows scaling the storage layer only instead, which makes is a good option for distributing the processing and storage across a cluster of servers, and by it's turn, scaling the number of nodes also scales the amount of data that a platform can process.    
+Dune is a platform focused on efficient querying and data visualization. It originally centered on the Ethereum ecosystem but has since expanded its operations across the broader blockchain space, from Bitcoin to Solana. In terms of storage, the platform uses a fork of Trino as its query engine, which supports Ethereum types natively, such as addresses and transaction hashes. Trino is a query engine where the execution layer is decoupled from the storage layer. Unlike traditional SQL databases, where query execution and storage are built into a monolithic system, Trino is well-suited for distributing both processing and storage across a cluster of servers. As a result, scaling the number of nodes also increases the amount of data the platform can process in parallel. The Trino syntax is similar to regular the regular SQL syntax used by most of the relational databases such as MySql and Postgres.
+
+Although EQL's long-term goal is to develop its own storage engine to efficiently distribute Ethereum data across the network and enable efficient P2P relational queries, the project currently relies on JSON-RPC providers as the "storage engine." The downside is that EVM Query Language (EQL) cannot process large numbers of blocks in a single request due to the rate limits imposed by public RPC providers. However, there is a workaround for this data limitation in development.
+
+EQL provides a SQL-like syntax that leverages the predictable relationships between key Ethereum entities—blocks, accounts, transactions, and logs—to create a more direct way of querying on-chain data. One example of how this syntax can be more efficient compared to SQL syntax—which is designed to handle all types of table relationships—is a simple query to fetch account information. For instance, let’s examine how to retrieve the nonce and address of Vitalik's account using Dune and Trino's SQL syntax:
+```SQL
+WITH account_balance as (
+    SELECT balance
+    FROM tokens_ethereum.balances_daily as b
+    WHERE b.address = 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+    AND token_standard = 'native'
+    ORDER BY b.day DESC
+    LIMIT 1
+),
+account_nonce as (
+    SELECT nonce
+    FROM ethereum.transactions t
+    WHERE t."from" = 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+    ORDER BY t.block_number DESC
+    LIMIT 1
+),
+account as (
+    SELECT nonce, balance FROM account_nonce, account_balance
+)
+SELECT * FROM account
+```
+*Listing 1.0 - Trino syntax to fetch and account's nonce and balance*
+
+The query above needs to retrieve data from two different tables, `transactions` and `balances_daily`, and join them into a single record to return the desired information. This is necessary because Dune does not provide a table that contains account data directly, requiring us to combine data from these two sources to obtain the information we need.
+![[Pasted image 20240921193647.png]]
+*Listing 1.1 - Available "raw" Ethereum tables*
+
+Unlike SQL, which must accommodate a wide range of use cases, EQL is specifically designed for EVM blockchains. As a result, it offers first-class support for queries like the one mentioned above.
+```SQL
+GET nonce, balance 
+FROM account 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+ON eth
+```
+*Listing 1.2 - EQL syntax to fetch and account's nonce and balance*
+
+It also offers first-class support for ENS, which in Trino would require an additional `SELECT` from another table. Moreover, EQL allows you to fetch the `code` of an account using the wildcard operator `*` along with `address`, `nonce`, and `balance`—a process that would otherwise require separate queries in Trino.
+```SQL
+GET * 
+FROM account vitalik.eth
+ON eth
+```
 
 ## How are the projects similar?
-When people hear Etherum and SQL in the same sentence they immediately think about Dune, this is proven through the frequently asked questions about the differences between EQL and Dune.
+While EQL and Dune differ significantly in their design and long-term objectives, they do share several common features, particularly in their ability to extract and export blockchain data. Both platforms allow users to run queries that extract on-chain information and provide options for exporting query results, though the exact methods and formats differ.
 
+1. **Data Extraction**:  
+    Both Dune and EQL enable users to extract data from blockchain ecosystems using familiar, SQL-like query languages. In Dune, users write SQL queries to access data from various raw Ethereum tables, combining different datasets as needed. EQL, on the other hand, offers a specialized SQL-like syntax tailored to the Ethereum Virtual Machine (EVM), streamlining access to key blockchain data like accounts, transactions, and balances.
+    
+2. **Exporting Query Results**:  
+    Both platforms also provide options to export the results of queries, though with some differences in the formats supported and pricing models:
+    - **Dune** allows users to export query results directly from its user interface, but this feature is limited to CSV format and is only available with a paid plan. For users on the free plan, there is still the option to export data via API requests, albeit with some technical overhead.
+    - **EQL**, being an open-source project, offers more flexibility in terms of export formats and cost. Users can export data in multiple formats, including JSON, CSV, and Parquet, directly from the platform. Since EQL is open source, all these export features are freely available to any user.
+      
+3. **User-Friendly Interfaces**:  
+    Both projects aim to simplify the process of querying blockchain data. Dune provides an interactive interface for building queries, visualizing data, and sharing insights through dashboards. EQL, while still under development, is designed to reduce the complexity of querying EVM chains by offering a language that directly maps to blockchain entities, enabling developers to fetch key data in fewer steps than traditional SQL.
+    
+
+In summary, while Dune and EQL differ in their broader goals and the scope of their respective query languages, they share core functionalities in data extraction and export options. Both platforms empower users to access and analyze blockchain data, with Dune excelling in user-friendly visualization and EQL standing out for its flexibility in query syntax and free access to export capabilities in multiple formats.
 
 ## When should you use EQL
 - Quick exploration of data
 - Quickly check Ethereum state
 - Check data about one or many accounts
 - Query different objects that can't be cached
-- 
 
 
 ## Purpose and Approach

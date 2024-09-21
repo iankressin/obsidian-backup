@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
+                "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
+                "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
+                "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md"
+                "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md"
               }
             }
           }
@@ -160,12 +160,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c90c3e11da8312fe",
+  "active": "c60c642cd92b6b74",
   "lastOpenFiles": [
+    "Pasted image 20240921193647.png",
+    "Pasted image 20240921193645.png",
     "15 - EQL/blog/Untitled.md",
     "15 - EQL/blog/EQL vs Dune",
     "15 - EQL/blog/How is it different from Dune?.md",
-    "15 - EQL/blog/EQL vs Dune/How is it different from Dune?.md",
+    "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
     "13- 2077/Projects/Bounties/Specs.md",
     "15 - EQL/general/Ideas.md",
     "14 - Madeiraria/Marketing.md",
@@ -187,7 +189,6 @@
     "Pasted image 20240915180001.png",
     "15 - EQL/research/How to optimize large query speeds?.md",
     "15 - EQL/roadmap/Phase 2 - Expanding data extraction capabilities.md",
-    "Pasted image 20240914115654.png",
     "13- 2077/Projects/Bounties/Entities.md",
     "2 - Notes/Rust book - Shared-State Concurrency.md",
     "15 - EQL/roadmap/Phase 1 - Explore RPCs max potential.md",
