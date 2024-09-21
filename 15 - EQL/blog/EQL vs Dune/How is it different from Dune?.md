@@ -1,13 +1,15 @@
-The title of this article is usually the first reaction of people when they learn about EVM Query Language. Despite having similarities, EQL and Dune are fundamentally different projects. This post intends to answer that question while it also compare the intersection between the two projects.
+The title of this article captures the initial reaction many people have when they first learn about EVM Query Language (EQL). Although there are surface-level similarities between EQL and Dune, these two projects are fundamentally distinct in their goals, design, and use cases. This article seeks to address the common question of how EQL differs from Dune, while also examining the points where the two projects overlap or share common features.
 
-The analysis will begin by giving a high level description of both projects, then will proceed to highlight the differences and similarities, and will wrap up with a benchmark comparison between EQL and Dune for specific scenarios. 
-
+The analysis will begin with a comprehensive, high-level overview of both EQL and Dune, providing essential background information on each project. Following this, it will delve deeper into a detailed comparison, highlighting both the differences and the similarities in their approaches to querying blockchain data. Finally, the post will conclude with a benchmark comparison, evaluating the performance of EQL and Dune in specific use cases, allowing readers to better understand their respective strengths and limitations in practical scenarios.
 ## Outlining the projects
 Dune is a data analytics platform designed for querying and visualizing blockchain data, primarily focused on Ethereum and other related blockchains such as Binance Smart Chain, Polygon, and Optimism. It provides users with the ability to run SQL queries on publicly available on-chain data, making it possible to extract, analyze, and visualize information from these blockchains. Users interact with the data primarily through a SQL-based query engine that supports custom and predefined queries, enhanced by caching and parallel processing for performance. The platform offers interactive dashboards for visualization, supporting various chart types and dynamic filtering, and facilitates collaboration through public sharing and forking of dashboards.
 
-EVM Query Language is a data extraction tool that provides users with a SQL-like language to run queries and extract data from EVM chains. The syntax is being actively develop to make the life of researchers and developers easier when in comes to accessing on-chain data. At the current stage, EQL translates the user queries into JSON-RPC requests, which make it an efficient and easy way to query the blockchain. The end-goal of the project is to provide a fully decentralized storage engine, where anyone will be able to query EVM chains using a relational approach, like in SQL databases. Unlike Dune, EQL doesn't aim to index different smart-contracts and decode different on-chain data.
+EVM Query Language (EQL) is a data extraction tool that offers users a SQL-like language to execute queries and retrieve data from EVM chains. The syntax is currently under active development to simplify access to on-chain data for researchers and developers. At its present stage, EQL translates user queries into JSON-RPC requests, providing an efficient and straightforward method for querying the blockchain. The ultimate objective of the project is to create a fully decentralized storage engine, enabling anyone to query EVM chains using a relational approach similar to SQL databases. Unlike Dune, EQL does not aim to index or decode various smart contracts and on-chain data.
+## How are the projects different?
+Dune is a platform focused on efficient queries and data visualization. The platform started focused solely on the Ethereum ecosystem but has expanded their operations across all the blockchain space, from Bitcoin do SQLana. 1
+
 ## How are the projects similar?
-The question that gives the title of this article shows when we're talking about Ethereum and SQL think of Dune.
+When people hear Etherum and SQL in the same sentence they immediately think about Dune, this is proven through the frequently asked questions about the differences between EQL and Dune.
 
 
 ## When should you use EQL
@@ -15,6 +17,7 @@ The question that gives the title of this article shows when we're talking about
 - Quickly check Ethereum state
 - Check data about one or many accounts
 - Query different objects that can't be cached
+- 
 
 
 ## Purpose and Approach
