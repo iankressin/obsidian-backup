@@ -101,11 +101,13 @@ EQL’s performance is influenced by several factors, including processing power
 - Fetching account's nonce and balance
 - Fetching logs from USDC transfers in 100 blocks range
 
-#### Fetching 100 blocks in a range
+####  100 blocks in a range
 Queries:
 ```sql
 # Dune
 SELECT * FROM ethereum.blocks b WHERE b.number BETWEEN 1 AND 100
+
+##############################################
 
 # EQL
 GET * FROM block 1:100 ON eth
@@ -113,19 +115,19 @@ GET * FROM block 1:100 ON eth
 
 Performance:
 
-|               | EQL        | Dune Free | Dune Medium |
-| ------------- | ---------- | --------- | ----------- |
-| **Mean**      | 1.0736 s   | 0.2189 s  | 0.2593 s    |
-| **Median**    | 1.0922 s   | 0.2089 s  | 0.2434 s    |
-| **Std. Dev.** | 0.052715 s | 0.0439 s  | 0.1299 s    |
+|               | EQL      | Dune Free | Dune Medium |
+| ------------- | -------- | --------- | ----------- |
+| **Mean**      | 813.6 ms | 218.9 ms  | 544.8 ms    |
+| **Median**    | 776.6 ms | 208.9 ms  | 432.4 ms    |
+| **Std. Dev.** | 130.2 ms | 43.9 ms   | 41.0 ms     |
 
-#### Fetching 100 blocks one by one
+#### 100 blocks one by one
 Queries:
 ```sql
 # Dune
-SELECT * FROM ethereum.blocks b WHERE b.number IN (
-1, 2, 3, ..., 100
-)
+SELECT * FROM ethereum.blocks b WHERE b.number IN (1, 2, 3, ..., 100)
+
+##############################################
 
 # EQL
 GET * FROM block 1,2,3,...,100 ON eth
@@ -133,18 +135,79 @@ GET * FROM block 1,2,3,...,100 ON eth
 
 Performance:
 
+|               | EQL      | Dune Free | Dune Medium |
+| ------------- | -------- | --------- | ----------- |
+| **Mean**      | 804.8 ms | 313.0 ms  | 259.3 ms    |
+| **Median**    | 107.7 ms | 214.0 ms  | 243.4 ms    |
+| **Std. Dev.** | 775.6 ms | 317.2 ms  | 129.9 ms    |
+
+#### 100 transactions by hash
+```SQL
+# Dune
+SELECT *
+FROM ethereum.transactions t
+WHERE t.hash 
+IN (
+	0xfffc07e7ff65a5ff7f8496042f85fc4e1d6bd29e012e776b970f4414c07d4d41,
+	...
+)
+
+##############################################
+
+# EQL
+GET *
+FROM tx 
+0xfffc07e7ff65a5ff7f8496042f85fc4e1d6bd29e012e776b970f4414c07d4d41,
+...
+ON eth
+```
+Performance:
+
 |               | EQL | Dune Free | Dune Medium |
 | ------------- | --- | --------- | ----------- |
-| **Mean**      |     |           |             |
-| **Median**    |     |           |             |
-| **Std. Dev.** |     |           |             |
+| **Mean**      |     | 7.93 s    | 30.05 s     |
+| **Median**    |     | 4.09 s    | 26.84 s     |
+| **Std. Dev.** |     | 8.13 s    | 18.33 s     |
+
+
+####  Logs from USDC transfers in 100 blocks range
+
+Queries:
+```SQL
+# Dune
+SELECT *
+FROM ethereum.logs l
+WHERE l.contract_address=0xdAC17F958D2ee523a2206206994597C13D831ec7
+AND l.topic0=0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+AND l.block_number BETWEEN 4638657 AND 4638758
+
+##############################################
+
+# EQL
+GET * 
+FROM log 
+WHERE
+block 4638657:4638758,
+address 0xdAC17F958D2ee523a2206206994597C13D831ec7,
+topic0 0xcb8241adb0c3fdb35b70c24ce35c5eb0c17af7431c99f827d44a445ca624176a
+ON eth
+```
+
+Performance:
+
+|               | EQL      | Dune Free | Dune Medium |
+| ------------- | -------- | --------- | ----------- |
+| **Mean**      | 344.1 ms | 436.6 ms  | 759.2 ms    |
+| **Median**    | 339.6 ms | 246.5 ms  | 472.4 ms    |
+| **Std. Dev.** | 20.2 ms  | 58.1 ms   | 916.2 ms    |
 
 
 
-### Account's balance and nonce
-#### Dune
+#### Account's balance and nonce
+
 Query:
 ```SQL
+# Dune
 WITH account_balance as (
     SELECT balance
     FROM tokens_ethereum.balances_daily as b
@@ -164,91 +227,20 @@ account as (
     SELECT nonce, balance FROM account_nonce, account_balance
 )
 SELECT * FROM account
-```
 
-Performance:
-![[Pasted image 20240915180001.png]]
+##############################################
 
-#### EQL
-Query:
-```SQL
-GET nonce, balance FROM account 0xc71048d303920c73c29705192393c567ac4e6c67 ON eth
-```
-
-Performance:
-### Account's balance and nonce using ENS
-Different from the other queries, this one had to be ran using the "medium model" that costs 10 credits, since it wasn't able to  
-
-#### Dune
-Query:
-```SQL
-WITH account_address as (
-    SELECT address
-    FROM ens.reverse_latest e
-    WHERE name = 'vitalik.eth'
-    ORDER BY e.latest_tx_block_time ASC
-    LIMIT 1
-),
-account_balance as (
-    SELECT balance
-    FROM tokens_ethereum.balances_daily as b
-    WHERE b.address = (SELECT address FROM account_address)
-    AND token_standard = 'native'
-    ORDER BY b.day DESC
-    LIMIT 1
-),
-account_nonce as (
-    SELECT nonce
-    FROM ethereum.transactions t
-    WHERE t."from" = (SELECT address FROM account_address)
-    ORDER BY t.block_number DESC
-    LIMIT 1
-),
-account as (
-    SELECT nonce, balance, address FROM account_nonce, account_balance, account_address
-)
-SELECT * FROM account
-```
-
-
-#### EQL
-Query:
-```SQL
-GET nonce, balance FROM account vitalik.eth ON eth
-```
-
-Performance:
-
-### Logs
-
-#### Dune
-Query:
-```sql
-SELECT *
-FROM ethereum.logs l
-WHERE l.block_number BETWEEN 4638657 AND 4638758
-AND l.contract_address=0xdAC17F958D2ee523a2206206994597C13D831ec7
-AND l.topic0=0xcb8241adb0c3fdb35b70c24ce35c5eb0c17af7431c99f827d44a445ca624176a
-```
-
-Perf:
-![[Pasted image 20240915225140.png]]
-#### EQL
-Query:
-```SQL
-GET *
-FROM log
-WHERE 
-    block 4638657:4638758,
-    address 0xdAC17F958D2ee523a2206206994597C13D831ec7,
-    topic0 0xcb8241adb0c3fdb35b70c24ce35c5eb0c17af7431c99f827d44a445ca624176a
+#EQL
+GET nonce, balance
+FROM account 0xc71048d303920c73c29705192393c567ac4e6c67
 ON eth
 ```
 
-Objecoes:
-	- Tratar de antemao a objecao e trazer uma argumentacao antecipada dos principais  problemas do EQL contra Dune
+Performance:
 
-### Questions
-1. Does Dune provide a way to dump the query result to a file?
-	**R:** Only to CSV and only with a paid plan.
-	
+|               | EQL       | Dune Free | Dune Medium  |
+| ------------- | --------- | --------- | ------------ |
+| **Mean**      | 939.03 ms | 48.99 s   | 4 min 49 sec |
+| **Median**    | 904.04 ms | 40.87 s   | 2 min 39 sec |
+| **Std. Dev.** | 93.925 ms | 18.46 s   | 3 min 9 sec  |
+
