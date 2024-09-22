@@ -53,81 +53,48 @@ FROM account vitalik.eth
 ON eth
 ```
 
+In contrast, Dune and EQL diverge in several key aspects. Dune is a comprehensive platform that emphasizes data visualization and user collaboration, making it an ideal tool for analysts and researchers looking to query and visualize data from multiple blockchains, not just Ethereum. Its use of Trino as a query engine, along with interactive dashboards, allows users to handle complex queries and create rich visual reports. EQL, on the other hand, is narrowly focused on querying EVM blockchains with a simplified, domain-specific syntax. It is designed to be lightweight, free, and open-source, with a goal of decentralizing data access. Unlike Dune, EQL does not prioritize visualizations or user interfaces, but instead focuses on efficient blockchain data extraction and providing flexibility in data exports. Thus, while both platforms enable users to query and extract blockchain data, Dune excels in visualization and cross-chain functionality, whereas EQL specializes in efficient querying of Ethereum-based data with a more direct, customizable approach.
 ## How are the projects similar?
-While EQL and Dune differ significantly in their design and long-term objectives, they do share several common features, particularly in their ability to extract and export blockchain data. Both platforms allow users to run queries that extract on-chain information and provide options for exporting query results, though the exact methods and formats differ.
+While EQL and Dune differ significantly in their design and long-term objectives, they do share several common features, particularly in their ability to extract and export blockchain data. Both platforms allow users to run queries that extract on-chain information, though the exact methods and formats differ.
 
-1. **Data Extraction**:  
-    Both Dune and EQL enable users to extract data from blockchain ecosystems using familiar, SQL-like query languages. In Dune, users write SQL queries to access data from various raw Ethereum tables, combining different datasets as needed. EQL, on the other hand, offers a specialized SQL-like syntax tailored to the Ethereum Virtual Machine (EVM), streamlining access to key blockchain data like accounts, transactions, and balances.
-    
-2. **Exporting Query Results**:  
-    Both platforms also provide options to export the results of queries, though with some differences in the formats supported and pricing models:
-    - **Dune** allows users to export query results directly from its user interface, but this feature is limited to CSV format and is only available with a paid plan. For users on the free plan, there is still the option to export data via API requests, albeit with some technical overhead.
-    - **EQL**, being an open-source project, offers more flexibility in terms of export formats and cost. Users can export data in multiple formats, including JSON, CSV, and Parquet, directly from the platform. Since EQL is open source, all these export features are freely available to any user.
-      
-3. **User-Friendly Interfaces**:  
-    Both projects aim to simplify the process of querying blockchain data. Dune provides an interactive interface for building queries, visualizing data, and sharing insights through dashboards. EQL, while still under development, is designed to reduce the complexity of querying EVM chains by offering a language that directly maps to blockchain entities, enabling developers to fetch key data in fewer steps than traditional SQL.
-    
+In terms of data extraction, both Dune and EQL enable users to retrieve information from blockchain ecosystems using SQL-like query languages. Dune users write SQL queries to access data from various raw Ethereum tables, combining different datasets to obtain the desired insights. EQL, by contrast, offers a specialized SQL-like syntax tailored specifically to the Ethereum Virtual Machine (EVM), streamlining access to crucial blockchain data such as accounts, transactions, and balances. This specialization allows for more direct and efficient querying of on-chain data.
 
-In summary, while Dune and EQL differ in their broader goals and the scope of their respective query languages, they share core functionalities in data extraction and export options. Both platforms empower users to access and analyze blockchain data, with Dune excelling in user-friendly visualization and EQL standing out for its flexibility in query syntax and free access to export capabilities in multiple formats.
+Both platforms also provide options for exporting query results, though they differ in terms of formats and pricing. Dune allows users to export query results directly through its interface, but this is limited to CSV format and only available with a paid plan. Free users must export data via API requests, which requires some additional technical steps. On the other hand, EQL, being open-source, offers greater flexibility and no cost barriers. Users can export data in a variety of formats, including JSON, CSV, and Parquet, without any restrictions, making it a more flexible and accessible option for developers and researchers.
 
-## When should you use EQL
+In summary, while Dune and EQL differ in their broader goals and the scope of their query languages, they share important functionalities in data extraction and export capabilities. Dune excels in user-friendly visualization and cross-chain functionality, while EQL stands out for its flexible query syntax and free access to multiple export formats, appealing to users with a more technical or development-oriented focus.
+
+## When should you use EQL over Dune
 - Quick exploration of data
 - Quickly check Ethereum state
 - Check data about one or many accounts
 - Query different objects that can't be cached
 
-
-## Purpose and Approach
-While Dune is widely known as a data analysis platform, EQL focuses on efficient data extraction, particularly within the Ethereum ecosystem. It’s important to note that this comparison is not a comprehensive evaluation of Dune’s capabilities, especially in analytics, as that falls outside the scope of what EQL aims to achieve. Instead, we are focused solely on the querying and data extraction capabilities of both tools.
-
-In this series of tests, we will evaluate Dune as a data extraction tool, a role in which it overlaps with EQL. The goal is to compare performance under this specific use case. Dune provides pre-indexed and pre-populated databases, making it easier to access complex relationships within the data, while EQL is designed for more direct interaction with Ethereum’s raw state through JSON-RPC providers.
-
-## What We’re Testing
-The tests will focus on extracting specific Ethereum entities such as blocks, transactions, accounts, and logs. Each test uses Ethereum Layer 1 (L1) as the data source, and the primary metric we’ll consider is the time it takes for each tool to return results.
-
-Additionally, it’s worth pointing out that while EQL has a tighter integration with Ethereum, Dune offers a more comprehensive data model through its pre-indexed infrastructure, making complex queries more accessible. However, EQL’s direct approach offers a more intuitive SQL-like API for Ethereum users, which may translate into efficiency for those familiar with blockchain data.
-
-## Test Setup
-The following tests were carried out based on the available resources and setups for each tool
-
-• **Dune:** Queries were executed through both the Dune interface and its API.
-• **EQL:** Tests were run on a MacBook Pro M2 Pro with a 500mb internet connection.
-
-It is worth mentioning EQL’s performance is influenced by processing power, network conditions, and RPC (Remote Procedure Call) performance.
-
-As of [current date], these tests were conducted, and it’s important to note that Dune’s performance may fluctuate during peak usage times as any other web application. If any of the results seem to fall outside the expected average performance, please let me know, and I will rerun the tests to ensure accuracy.
-
 ## Benchmarks
+While Dune provides a extremely wide variety of datasets for users to compose their queries and cross that data in whatever way, for these benchmarks, we are, obviously, only focusing on the overlap parts between EQL and Dune, which are the core Ethereum constructions: blocks, transactions, accounts and logs (traces *soon*™).
 
-### Fetch all fields for blocks 100 blocks
-The first test is to fetch 100 blocks from Ethereum. EQL performance is bounded by the RPC provider being used. For this test we're using dRPC
+In this section we are going to compare Dune and EQL in the queries that are made possible by both projects.
+### Test Environment
+The tests were performed on a system with the following specifications:
+- **Processor**: Ryzen 9 5900x
+- **RAM**: 16GB HyperX Fury (Dual Channel)
+- **Storage**: 1TB Kingston NV2 M.2 2280 SSD
+- **Internet Connection**: 300 Mbps
+### Testing Methodology
+For each platform, ten query executions were collected to gather performance metrics. While executing a larger number of queries, such as one hundred, would provide more comprehensive data, the manual method employed to collect Dune metrics made expanding the number of records impractical and unproductive. Although Dune offers an API for fetching data from endpoints, it only returns data from the most recent execution of a specified query. This behavior effectively caches the last result, undermining the ability to perform a meaningful comparison between the performance of EQL and Dune.
+
+Consequently, Dune queries were executed directly through the application's web user interface without any caching mechanisms or materialization configurations. The metrics were gathered solely based on the data provided by the app. In contrast, EQL metrics were collected using the `eql_core` Rust crate. The `eql` function within this crate was utilized to execute queries by passing them as parameters and retrieving the results. To ensure accurate and reliable performance measurements, the Criterion benchmarking library was employed to collect and analyze the metrics.
+### Testing Conditions and Considerations
+These tests were conducted as of [current date]. It is essential to acknowledge that Dune’s performance may vary during peak usage times, similar to other web applications. Such fluctuations could affect the consistency of the results. Should any of the outcomes appear to deviate significantly from the expected average performance, it is recommended to rerun the tests to verify their accuracy and ensure the reliability of the comparative analysis.
+EQL’s performance is influenced by several factors, including processing power, network conditions, and the efficiency of Remote Procedure Calls (RPC). Ensuring optimal conditions in these areas is crucial for achieving the best possible performance outcomes with EQL.
+
+### The tests
+- Fetching 100 blocks in a range
+- Fetching 100 blocks one by one
+- Fetching 100 transactions by hash
+- Fetching account's nonce and balance
+- Fetching logs from USDC transfers in 100 blocks range
 
 
-
-Despite being tools with different goals (explore this more in depth), EQL and Dune share similar features, since both have in it's core a query language to retrieve blockchain data.
-
-In this series of tests we are going to use Dune as a data extraction tool, which this is what EQL is. Dune is broadly used as a data analysis platform, and we cannot compare that portion of the Dune ecosystem to EVM Query Language, since they are completely different things.
-
-EQL is a tool design, in this first iteration, to extract parts of the Ethereum state subjected to the user interest, while Dune provide a pre-indexed and pre-populated databases, so access to complex relations is made easy.
-
-The performance benchmark only considers the amount of time before each of the projects to yield the result of the queries
-
-The test will analyze the performance of fetching single and groups of the considered first-class entities in EQL (blocks, transactions, accounts, and logs) all the tests will be use Ethereum L1 as data source.
-
-EQL is able to provide a better SQL language API than Dune, since EQL is designed with Ethereum in mind.
-### Setup
-Dune queries were ran using the Dune interface and Dune API
-
-EQL test were ran in a macbook pro with m2 pro chip and a internet connection of 27mb lol
-EQL performance is highly bound in the processing power, network connection and RPC performance
-
-Which is the fastest RPC?
-Which one is the slowest RPC?
-
-## Benchmarks
-
-### Fetch all fields for blocks 100 blocks
-The first test is to fetch 100 blocks from Ethereum. EQL performance is bounded by the RPC provider being used. For this test we're using dRPC
 
 #### Dune
 Query:
