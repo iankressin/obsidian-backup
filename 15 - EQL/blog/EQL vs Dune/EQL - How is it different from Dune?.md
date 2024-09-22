@@ -89,6 +89,7 @@ For each platform, ten query executions were collected to gather performance met
 
 Consequently, Dune queries were executed directly through the application's web user interface without any caching mechanisms or materialization configurations. The metrics were gathered solely based on the data provided by the app. In contrast, EQL metrics were collected using the `eql_core` Rust crate. The `eql` function within this crate was utilized to execute queries by passing them as parameters and retrieving the results. To ensure accurate and reliable performance measurements, the Criterion benchmarking library was employed to collect and analyze the metrics.
 
+// !TODO finish this paragraph
 Dune provides query engines in three different "sizes" — Free, Medium, and Large — with Free being the slowest, but as the name implies, free from any cost, Medium costing 10 credits and having a monthly limit of 2500, and Large being the  
 ### Testing Conditions and Considerations
 These tests were conducted as of 2024-09-21. It is essential to acknowledge that Dune’s performance may vary during peak usage times, similar to other web applications. Such fluctuations could affect the consistency of the results. If any of the outcomes appear to deviate significantly from the expected average performance, it is recommended to rerun the tests to verify their accuracy and ensure the reliability of the comparative analysis.
@@ -112,11 +113,32 @@ GET * FROM block 1:100 ON eth
 
 Performance:
 
-|         | EQL | Dune Free | Dune Medium |
-| ------- | --- | --------- | ----------- |
-| Average |     |           |             |
-| Mean    |     |           |             |
-| Median  |     |           |             |
+|               | EQL        | Dune Free | Dune Medium |
+| ------------- | ---------- | --------- | ----------- |
+| **Mean**      | 1.0736 s   | 0.2189 s  | 0.2593 s    |
+| **Median**    | 1.0922 s   | 0.2089 s  | 0.2434 s    |
+| **Std. Dev.** | 0.052715 s | 0.0439 s  | 0.1299 s    |
+
+#### Fetching 100 blocks one by one
+Queries:
+```sql
+# Dune
+SELECT * FROM ethereum.blocks b WHERE b.number IN (
+1, 2, 3, ..., 100
+)
+
+# EQL
+GET * FROM block 1,2,3,...,100 ON eth
+```
+
+Performance:
+
+|               | EQL | Dune Free | Dune Medium |
+| ------------- | --- | --------- | ----------- |
+| **Mean**      |     |           |             |
+| **Median**    |     |           |             |
+| **Std. Dev.** |     |           |             |
+
 
 
 ### Account's balance and nonce
