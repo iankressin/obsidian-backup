@@ -89,19 +89,19 @@ For each platform, ten query executions were collected to gather performance met
 
 Consequently, Dune queries were executed directly through the application's web user interface without any caching mechanisms or materialization configurations. The metrics were gathered solely based on the data provided by the app. In contrast, EQL metrics were collected using the `eql_core` Rust crate. The `eql` function within this crate was utilized to execute queries by passing them as parameters and retrieving the results. To ensure accurate and reliable performance measurements, the Criterion benchmarking library was employed to collect and analyze the metrics.
 
-// !TODO finish this paragraph
-Dune provides query engines in three different "sizes" — Free, Medium, and Large — with Free being the slowest, but as the name implies, free from any cost, Medium costing 10 credits and having a monthly limit of 2500, and Large being the  
+Dune offers three query engine options: Free, Medium, and Large. The Free engine is the slowest but has no cost. The Medium engine costs 10 credits per query, with a monthly limit of 2,500 credits. The Large engine, which requires a subscription, provides 25,000 monthly credits. It costs 20 credits per query and is priced at $349 per month, billed annually. The tests collected data separately from both the Free and Medium plans, as these plans are offered at no cost. This allows for a fair comparison, since EQL is also a free option for querying on-chain data.
+
 ### Testing Conditions and Considerations
 These tests were conducted as of 2024-09-21. It is essential to acknowledge that Dune’s performance may vary during peak usage times, similar to other web applications. Such fluctuations could affect the consistency of the results. If any of the outcomes appear to deviate significantly from the expected average performance, it is recommended to rerun the tests to verify their accuracy and ensure the reliability of the comparative analysis.
 EQL’s performance is influenced by several factors, including processing power, network conditions, and the efficiency of Remote Procedure Calls (RPC). Ensuring optimal conditions in these areas is crucial for achieving the best possible performance outcomes with EQL.
 ### The tests
-- Fetching 100 blocks in a range
-- Fetching 100 blocks one by one
-- Fetching 100 transactions by hash
-- Fetching account's nonce and balance
-- Fetching logs from USDC transfers in 100 blocks range
+- **Block Range Fetch**: 100 Blocks
+- **Sequential Block Fetch**: 100 Blocks Individually
+- **Transaction Lookup by Hash**: 100 Transactions
+- **Account State Fetch**: Nonce and Balance
+- **Event Log Fetch**: USDC Transfers in 100 Block Range
 
-####  100 blocks in a range
+#### **Block Range Fetch**: 100 Blocks
 Queries:
 ```sql
 # Dune
@@ -121,7 +121,7 @@ Performance:
 | **Median**    | 776.6 ms | 208.9 ms  | 432.4 ms    |
 | **Std. Dev.** | 130.2 ms | 43.9 ms   | 41.0 ms     |
 
-#### 100 blocks one by one
+#### **Sequential Block Fetch**: 100 Blocks Individually
 Queries:
 ```sql
 # Dune
@@ -141,7 +141,7 @@ Performance:
 | **Median**    | 107.7 ms | 214.0 ms  | 243.4 ms    |
 | **Std. Dev.** | 775.6 ms | 317.2 ms  | 129.9 ms    |
 
-#### 100 transactions by hash
+#### **Transaction Lookup by Hash**: 100 Transactions
 ```SQL
 # Dune
 SELECT *
@@ -163,15 +163,14 @@ ON eth
 ```
 Performance:
 
-|               | EQL | Dune Free | Dune Medium |
-| ------------- | --- | --------- | ----------- |
-| **Mean**      |     | 7.93 s    | 30.05 s     |
-| **Median**    |     | 4.09 s    | 26.84 s     |
-| **Std. Dev.** |     | 8.13 s    | 18.33 s     |
+|               | EQL       | Dune Free | Dune Medium |
+| ------------- | --------- | --------- | ----------- |
+| **Mean**      | 1.14 s    | 7.93 s    | 30.05 s     |
+| **Median**    | 1.08 s    | 4.09 s    | 26.84 s     |
+| **Std. Dev.** | 142.24 ms | 8.13 s    | 18.33 s     |
 
 
-####  Logs from USDC transfers in 100 blocks range
-
+####  **Event Log Fetch**: USDC Transfers in 100 Block Range
 Queries:
 ```SQL
 # Dune
@@ -201,10 +200,7 @@ Performance:
 | **Median**    | 339.6 ms | 246.5 ms  | 472.4 ms    |
 | **Std. Dev.** | 20.2 ms  | 58.1 ms   | 916.2 ms    |
 
-
-
-#### Account's balance and nonce
-
+#### **Account State Fetch**: Nonce and Balance
 Query:
 ```SQL
 # Dune
@@ -238,9 +234,9 @@ ON eth
 
 Performance:
 
-|               | EQL       | Dune Free | Dune Medium  |
-| ------------- | --------- | --------- | ------------ |
-| **Mean**      | 939.03 ms | 48.99 s   | 4 min 49 sec |
-| **Median**    | 904.04 ms | 40.87 s   | 2 min 39 sec |
-| **Std. Dev.** | 93.925 ms | 18.46 s   | 3 min 9 sec  |
+|               | EQL       | Dune Free | Dune Medium |
+| ------------- | --------- | --------- | ----------- |
+| **Mean**      | 939.03 ms | 48.99 s   | 3.81 min    |
+| **Median**    | 904.04 ms | 40.87 s   | 2.64 min    |
+| **Std. Dev.** | 93.925 ms | 18.46 s   | 3.14 min    |
 
