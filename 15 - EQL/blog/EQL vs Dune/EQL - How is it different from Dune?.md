@@ -34,6 +34,7 @@ SELECT * FROM account
 *Listing 1.0 - Trino syntax to fetch and account's nonce and balance*
 
 The query above needs to retrieve data from two different tables, `transactions` and `balances_daily`, and join them into a single record to return the desired information. This is necessary because Dune does not provide a table that contains account data directly, requiring us to combine data from these two sources to obtain the information we need.
+
 ![[Pasted image 20240921193647.png]]
 *Listing 1.1 - Available "raw" Ethereum tables*
 
@@ -121,6 +122,15 @@ Performance:
 | **Median**    | 776.6 ms | 208.9 ms  | 432.4 ms    |
 | **Std. Dev.** | 130.2 ms | 43.9 ms   | 41.0 ms     |
 
+**Analysis:**
+- **Dune Free** is the fastest, with both the lowest mean and median execution times.
+- **EQL** is the slowest in this category.
+- **Standard deviation** is lowest for Dune Free, indicating consistent performance.
+
+**Conclusion:**
+- For fetching a range of blocks, **Dune Free** offers the best performance.
+- **EQL** may not be the optimal choice for this specific query type.
+
 #### **Sequential Block Fetch**: 100 Blocks Individually
 Queries:
 ```sql
@@ -140,6 +150,15 @@ Performance:
 | **Mean**      | 804.8 ms | 313.0 ms  | 259.3 ms    |
 | **Median**    | 107.7 ms | 214.0 ms  | 243.4 ms    |
 | **Std. Dev.** | 775.6 ms | 317.2 ms  | 129.9 ms    |
+
+**Analysis:**
+- **EQL** has the lowest median time but the highest standard deviation, indicating inconsistent performance.
+- **Dune Medium** has the lowest mean time and a relatively low standard deviation.
+- **Dune Free** performs in between the other two.
+
+**Conclusion:**
+- **Dune Medium** offers the most consistent and fastest average performance.
+- While **EQL** can be faster in some instances (as indicated by the median), its high variability might affect reliability.
 
 #### **Transaction Lookup by Hash**: 100 Transactions
 ```SQL
@@ -169,6 +188,13 @@ Performance:
 | **Median**    | 1.08 s    | 4.09 s    | 26.84 s     |
 | **Std. Dev.** | 142.24 ms | 8.13 s    | 18.33 s     |
 
+**Analysis:**
+- **EQL** significantly outperforms both Dune tiers.
+- **Dune Medium** is the slowest, with a mean time almost 30 times that of EQL.
+- **Standard deviation** for EQL is much lower, indicating consistent performance.
+
+**Conclusion:**
+- **EQL** is the superior choice for transaction lookups by hash, offering much faster and more consistent execution times.
 
 ####  **Event Log Fetch**: USDC Transfers in 100 Block Range
 Queries:
@@ -199,6 +225,15 @@ Performance:
 | **Mean**      | 344.1 ms | 436.6 ms  | 759.2 ms    |
 | **Median**    | 339.6 ms | 246.5 ms  | 472.4 ms    |
 | **Std. Dev.** | 20.2 ms  | 58.1 ms   | 916.2 ms    |
+
+**Analysis:**
+- **EQL** has the lowest mean and standard deviation, indicating both speed and consistency.
+- **Dune Free** has a lower median time than EQL but higher mean and standard deviation.
+- **Dune Medium** shows high variability, as indicated by a high standard deviation.
+
+**Conclusion:**
+- **EQL** provides the best overall performance for event log fetching.
+- **Dune Free** is competitive in median time but less consistent.
 
 #### **Account State Fetch**: Nonce and Balance
 Query:
@@ -240,3 +275,35 @@ Performance:
 | **Median**    | 904.04 ms | 40.87 s   | 2.64 min    |
 | **Std. Dev.** | 93.925 ms | 18.46 s   | 3.14 min    |
 
+**Analysis:**
+- **EQL** vastly outperforms both Dune tiers, completing queries in under a second.
+- **Dune Free** and **Dune Medium** take significantly longer, with execution times ranging from nearly a minute to several minutes.
+- High standard deviations for Dune indicate inconsistent performance.
+
+**Conclusion:**
+- For account state fetching, **EQL** is dramatically faster and more reliable.
+- **Dune** may not be practical for time-sensitive applications requiring account state data.
+
+### Benchmark analysis
+EQL outperforms Dune in transaction lookups by hash, account state retrievals, and event log fetches, offering faster and more consistent performance across these query types. It also shows more reliable execution times with lower variability, making it a better choice for users requiring predictability.
+
+Dune Free excels in block range fetches, particularly when scanning 100 blocks. Its infrastructure seems optimized for this type of query, making it more efficient than both EQL and Dune Medium. Despite being a free tier, it consistently outperforms the paid Dune Medium option in this area.
+
+Dune Medium, despite being a larger query engine, shows high variability and does not offer better performance than Dune Free in block range queries. Its inconsistency across event log fetches and account state queries limits its reliability.
+
+The unexpected performance gap between Dune Free and Dune Medium in block fetches remains unexplained.
+
+## Final thoughts
+EQL and Dune are both tools for querying blockchain data, each catering to different needs and use cases. Understanding their strengths and limitations is crucial in selecting the right tool for your specific requirements.
+
+EQL offers a more intuitive and user-friendly SQL-like syntax tailored specifically for EVM chains, making it easier for developers and researchers to write queries without deep knowledge of traditional SQL. It is ideal for quick exploration of Ethereum’s state, checking data about one or multiple accounts, or querying specific objects that can’t be cached. Benchmark tests show that EQL outperforms Dune in transaction lookups by hash, account state retrievals, and event log fetches, offering faster and more consistent execution times. Being open-source, EQL allows users to export data in various formats like JSON, CSV, and Parquet without any cost barriers or restrictions.
+
+On the other hand, Dune excels at processing large numbers of blocks or extensive datasets, making it more suitable when dealing with queries that involve significant amounts of data. It provides robust data visualization and collaboration features, offering interactive dashboards, rich visual reports, and cross-chain functionality, which is beneficial for analysts and researchers interested in multiple blockchain ecosystems. For users comfortable with traditional SQL, Dune’s use of Trino and standard SQL syntax allows for complex queries and familiar operations.
+
+It’s important to note that EQL currently cannot process large numbers of rows in a single query due to dependencies on JSON-RPC providers and their rate limits. If your use case involves querying vast amounts of data, Dune is the better option at this time. However, the EQL project is actively working on a solution to overcome this limitation.
+
+The benchmark tests highlight the strengths of each platform. EQL demonstrated superior performance in transaction lookups by hash, account state retrievals, and event log fetches, with faster execution times and consistent performance. Dune outperformed EQL in block range fetches, especially when scanning a large number of blocks, due to its optimized infrastructure and caching mechanisms.
+
+While both EQL and Dune enable users to extract and export blockchain data using SQL-like query languages, their approaches differ. EQL focuses on providing a lightweight, free, and open-source tool specifically for EVM blockchains. Its syntax leverages the predictable relationships between Ethereum entities, offering a more direct and efficient querying method. Dune offers a comprehensive platform with an emphasis on data visualization, cross-chain functionality, and user collaboration, leveraging existing SQL constructions through Trino to provide familiarity and flexibility for complex queries.
+
+Choosing between EQL and Dune ultimately depends on your specific needs. Opt for EQL if you need a user-friendly syntax for quick and efficient querying of EVM blockchain data and don’t require processing large datasets. Choose Dune if you need robust data processing capabilities, advanced visualization tools, and the ability to work across multiple blockchain ecosystems. Both platforms have their unique advantages, and understanding these will help you select the tool that best aligns with your project’s goals.
