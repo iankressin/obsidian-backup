@@ -180,6 +180,7 @@ FROM tx
 ...
 ON eth
 ```
+
 Performance:
 
 |               | EQL       | Dune Free | Dune Medium |
@@ -202,9 +203,9 @@ Queries:
 # Dune
 SELECT *
 FROM ethereum.logs l
-WHERE l.contract_address=0xdAC17F958D2ee523a2206206994597C13D831ec7
+WHERE l.block_number BETWEEN 4638657 AND 4638758
+AND l.contract_address=0xdAC17F958D2ee523a2206206994597C13D831ec7
 AND l.topic0=0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
-AND l.block_number BETWEEN 4638657 AND 4638758
 
 ##############################################
 
