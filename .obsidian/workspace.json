@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
+                "file": "15 - EQL/applications/LLM knowledge base.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EQL - How is it different from Dune?"
+              "title": "LLM knowledge base"
             }
           }
         ]
@@ -166,12 +166,14 @@
   },
   "active": "c60c642cd92b6b74",
   "lastOpenFiles": [
+    "15 - EQL/applications/ESP.md",
+    "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
+    "15 - EQL/app ideas/Subscribe as a service.md",
     "15 - EQL/app ideas/Data extractor.md",
     "15 - EQL/app ideas",
     "2 - Notes/What is BERT?.md",
     "15 - EQL/social-media/alpha 0.1.2 release.md",
     "13- 2077/Projects/Bounties/Specs.md",
-    "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
     "Pasted image 20240921193647.png",
     "Pasted image 20240921193645.png",
     "15 - EQL/blog/Untitled.md",
@@ -181,7 +183,6 @@
     "14 - Madeiraria/Marketing.md",
     "Untitled 2.canvas",
     "2024-09-18.md",
-    "15 - EQL/applications/ESP.md",
     "15 - EQL/applications/LLM knowledge base.md",
     "15 - EQL/applications",
     "15 - EQL/Untitled 1.md",
@@ -205,7 +206,6 @@
     "15 - EQL/general/readme.md",
     "15 - EQL/pitch/discord-pitch.md",
     "15 - EQL/social-media/release.md",
-    "15 - EQL/blog/alpha-release/Release post structure.md",
     "15 - EQL/blog/alpha-release",
     "15 - EQL/social-media",
     "15 - EQL/research",

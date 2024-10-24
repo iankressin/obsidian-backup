@@ -1,0 +1,1 @@
+Subscribe to queries and get a url to always receive an updated version of the query. This can be attached to 
