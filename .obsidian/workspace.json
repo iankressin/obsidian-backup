@@ -16,7 +16,9 @@
                 "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "EQL - How is it different from Dune?"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -94,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for EQL - How is it different from Dune?"
             }
           },
           {
@@ -106,7 +116,9 @@
                 "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from EQL - How is it different from Dune?"
             }
           },
           {
@@ -117,7 +129,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -127,7 +141,9 @@
               "type": "outline",
               "state": {
                 "file": "15 - EQL/blog/EQL vs Dune/EQL - How is it different from Dune?.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of EQL - How is it different from Dune?"
             }
           }
         ]
@@ -150,6 +166,8 @@
   },
   "active": "c60c642cd92b6b74",
   "lastOpenFiles": [
+    "15 - EQL/app ideas/Data extractor.md",
+    "15 - EQL/app ideas",
     "2 - Notes/What is BERT?.md",
     "15 - EQL/social-media/alpha 0.1.2 release.md",
     "13- 2077/Projects/Bounties/Specs.md",
@@ -188,7 +206,6 @@
     "15 - EQL/pitch/discord-pitch.md",
     "15 - EQL/social-media/release.md",
     "15 - EQL/blog/alpha-release/Release post structure.md",
-    "15 - EQL/general/eth-online-application.md",
     "15 - EQL/blog/alpha-release",
     "15 - EQL/social-media",
     "15 - EQL/research",
@@ -196,7 +213,6 @@
     "15 - EQL/roadmap",
     "15 - EQL/pitch",
     "15 - EQL/blog",
-    "15 - EQL",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]

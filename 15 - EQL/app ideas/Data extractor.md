@@ -1,0 +1,1 @@
+Create a user friendly UI that lets non-technical users to extract data from EVM chains, without the writing actual queries. Parse use LLM parser or let the users tell which fields and filters they want 
